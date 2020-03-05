@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ClickToMove : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class ClickToMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             //Locate where the player clicked on the terrain
             locatePosition();
