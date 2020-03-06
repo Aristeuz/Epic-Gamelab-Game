@@ -4,35 +4,20 @@ using UnityEngine;
 
 public class SkillButtons : MonoBehaviour
 {
-    //public AudioSource a3;
-    //public AudioSource b3;
-    //public AudioSource c3;
-
+    //Makes arrays that you can fill in, inside Unity.
     public GameObject[] skill;
     public AudioSource[] note;
 
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        if (Input.GetMouseButtonDown(0))
-        {
-            playNote();
-        }
-        */
-    }
-
+    //This is for the notes, it only works as long as "makeshiftUI" is active in the scene.
+    //I'm guessing it gets the actual notes from there, maybe we need to make a deticated note holder?
     public void playNote(int noteIndex)
     {
         note[noteIndex].Play();
     }
 
+    //This is for an extra thing the "skill" can do, in this case it just spawns a ball.
+    //Could not figure out how I could let them work both in the same function. So they are seperate.
     public void playSkill(int skillIndex)
     {
         Instantiate(skill[skillIndex], transform.position, transform.rotation);
