@@ -13,9 +13,9 @@ public class PrimeMusicManager : MonoBehaviour
 
     public string bardSong = "        "; //starting state is 8 blanks. (this can be increased or decreased depending on the amount we wish to track.
     public string currentNote = " ";
-    public int timer = 0;
-    public int musicalInterval = 2; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
-    public int reactionTime = 0.5;
+    public float musicTimer = 0;
+    public float musicalInterval = 2; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
+    public float reactionTime = 0.5f;
 
     public AudioSource a3;
     public AudioSource b3;
@@ -37,10 +37,10 @@ public class PrimeMusicManager : MonoBehaviour
     void FixedUpdate()
     {
         //A timer that constantly goes up.
-            timer += Time.deltaTime;
+            musicTimer += Time.deltaTime;
 
         //we check essentially if the player is playing too fast and thus goes off beat. (this does not currently support 8th notes, and likely never will. but could if needed)
-            if (timer < musicalInterval)
+            if (musicTimer < musicalInterval)
             {
                 //check if the note is blank. otherwise the player is off beat
                 if (currentNote != " ")
@@ -56,7 +56,7 @@ public class PrimeMusicManager : MonoBehaviour
         }
 
             //check if a note is played within the reaction time frame and not outside of it.
-        if ((currentNote == true)&&(timer <= musicalInterval + reactionTime)&&(timer => musicalInterval))
+        if ((currentNote != " ") && (musicTimer <= musicalInterval + reactionTime) && (musicTimer >= musicalInterval))
         {
             //A check after interval X about if a note has been added
             //If so
@@ -71,11 +71,11 @@ public class PrimeMusicManager : MonoBehaviour
         }
 
         //we check if the player missed the reactionTime frame
-        else if (timer => musicalInterval + reactionTime)
+        else if (musicTimer >= (musicalInterval + reactionTime))
         {
             //remove the first letter of bardSong
             //add a blankNote at the end of bardSong
-            timer = (reactionTime / 2); //(we're compensating for the time we acounted for reaction time. wether to take the full reaction time or only a bit I'm not sure. playtesting req.
+            musicTimer = (reactionTime / 2); //(we're compensating for the time we acounted for reaction time. wether to take the full reaction time or only a bit I'm not sure. playtesting req.
 
         }
 
