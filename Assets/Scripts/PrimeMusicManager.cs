@@ -11,7 +11,7 @@ using UnityEngine;
 public class PrimeMusicManager : MonoBehaviour
 {
 
-    public string bardSong = "        "; //starting state is 8 blanks. (this can be increased or decreased depending on the amount we wish to track.
+    public string bardSong = "                "; //starting state is 16 blanks. (this can be increased or decreased depending on the amount we wish to track.
     public string currentNote = " ";
     public float musicTimer = 0;
     public float musicalInterval = 2; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
@@ -27,18 +27,14 @@ public class PrimeMusicManager : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //nothing for now. but I'm sure we'll use this sooner or later.
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         //A timer that constantly goes up.
             musicTimer += Time.deltaTime;
 
+
+        //This first check is if we allow the player to play music too quick and then have it possibly go too fast.
+        //This can be turned into an 8th beat by setting up a second string list that records these too quick beats and thus wont disturb the first list.
         //we check essentially if the player is playing too fast and thus goes off beat. (this does not currently support 8th notes, and likely never will. but could if needed)
             if (musicTimer < musicalInterval)
             {
@@ -47,27 +43,26 @@ public class PrimeMusicManager : MonoBehaviour
             {
                 BrokenChain();
                 Debug.Log("Chain broken, Too quick.");
-
                 //remove the first letter of bardSong
+                bardSong.Remove(0, 1);
                 //add a - at the end of bardSong
+                bardSong += "-"; // - will be a non note. b
+                musicTimer = 0;
             }
-
-            // set timer to 0
         }
+
+
 
             //check if a note is played within the reaction time frame and not outside of it.
         if ((currentNote != " ") && (musicTimer <= musicalInterval + reactionTime) && (musicTimer >= musicalInterval))
         {
-            //A check after interval X about if a note has been added
-            //If so
             //Play said note
+                //I imagine we create a seperate void that we call here that will play the correct note according to a switch statement.
             //remove the first letter of the string, add the note in question to the end of the string.
-
-            //If instead the note is blank.
-            //No music is played
-            //remove the first letter of the string, and add a blank note to the end of the string.
-
-            //Set timer to 0.
+            bardSong.Remove(0, 1);
+                bardSong += currentNote; 
+                Debug.Log("Current list = " + bardSong);
+            musicTimer = 0;
         }
 
         //we check if the player missed the reactionTime frame
@@ -75,16 +70,14 @@ public class PrimeMusicManager : MonoBehaviour
         {
             //remove the first letter of bardSong
             //add a blankNote at the end of bardSong
+            bardSong.Remove(0, 1);
+            bardSong += currentNote;
             musicTimer = (reactionTime / 2); //(we're compensating for the time we acounted for reaction time. wether to take the full reaction time or only a bit I'm not sure. playtesting req.
-
         }
-
-
-
-
-
-
     }
+
+
+
 
     //Here we check to play the sound of an envoirment object. 
     void OnCollisionEnter(Collision other)
@@ -99,11 +92,12 @@ public class PrimeMusicManager : MonoBehaviour
                 case "a note": //regular example
                 //Debug.Log("Play audio 'a note'.");
                 //set currentNote to the note in question
+                currentNote = string.Format("{0}!", currentNote)
                 break;
 
                 case " ":
-                //Debug.Log("empty note, no audio.");
-                //set currentNote to blank.
+                Debug.Log("empty note, no audio.");
+                currentNote = " ";
                 //This is an exception case. Not sure when it would be needed.
 
                 break;
