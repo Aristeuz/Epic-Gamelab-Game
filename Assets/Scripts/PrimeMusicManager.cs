@@ -17,7 +17,7 @@ public class PrimeMusicManager : MonoBehaviour
     public float musicalInterval = 2; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
     public float reactionTime = 0.5f;
 
-    public Collider playerCollider;
+    //public Collider playerCollider; we should probebly just add this to the player and then direct this to the bubble..
     public Collider MusicRangeCollider; //Not sure if we need to add this~
 
     public AudioSource a3;
@@ -82,16 +82,13 @@ public class PrimeMusicManager : MonoBehaviour
         }
     }
 
-
-
-
-    //Here we check to play the sound of an envoirment object. 
-    void OnCollisionEnter(Collision other)
+    //Here we check to play the sound of an envoirment object.
+    private void OnCollisionEnter(Collision other)
     {
-        Collider playerCollider = other.contacts[0].thisCollider; //This should allow the playerCollider to work as the colliding object
+        //Collider playerCollider = other.contacts[0].thisCollider; //This should allow the playerCollider to work as the colliding object
         Debug.Log("Annie are you working? are you working? Are you working annie?!");
 
-        if (playerCollider.gameObject.tag == "SoundTrigger")        //when this note colides with the Note player
+        if (other.gameObject.CompareTag("SoundTrigger"))        //when this note colides with the Note player
         {
             switch (other.gameObject.GetComponent<musicObjectCode>().assignedNote)
             {
@@ -110,13 +107,16 @@ public class PrimeMusicManager : MonoBehaviour
             }
         }
 
+
+
     }
+
+ 
 
     void BrokenChain()
     {
         
         //This can be called by any enemy who's checking in with the bardSong. 
-        
         //If after 2 or more succesfull following notes there is a wrong link in the end of the string, a particle will play. this is not tracked by BrokenChain. just making a note temporarily
     }
 
