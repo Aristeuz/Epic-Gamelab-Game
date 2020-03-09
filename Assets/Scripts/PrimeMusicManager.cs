@@ -36,7 +36,9 @@ public class PrimeMusicManager : MonoBehaviour
         //This first check is if we allow the player to play music too quick and then have it possibly go too fast.
         //This can be turned into an 8th beat by setting up a second string list that records these too quick beats and thus wont disturb the first list.
         //we check essentially if the player is playing too fast and thus goes off beat. (this does not currently support 8th notes, and likely never will. but could if needed)
-            if (musicTimer < musicalInterval)
+ 
+        /*
+        if (musicTimer < musicalInterval)
             {
                 //check if the note is blank. otherwise the player is off beat
                 if (currentNote != " ")
@@ -50,9 +52,9 @@ public class PrimeMusicManager : MonoBehaviour
                 musicTimer = 0;
             }
         }
+        */
 
-
-
+        
             //check if a note is played within the reaction time frame and not outside of it.
         if ((currentNote != " ") && (musicTimer <= musicalInterval + reactionTime) && (musicTimer >= musicalInterval))
         {
