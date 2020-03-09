@@ -17,6 +17,9 @@ public class PrimeMusicManager : MonoBehaviour
     public float musicalInterval = 2; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
     public float reactionTime = 0.5f;
 
+    public Collider playerCollider;
+    public Collider MusicRangeCollider; //Not sure if we need to add this~
+
     public AudioSource a3;
     public AudioSource b3;
     public AudioSource c3;
@@ -32,7 +35,7 @@ public class PrimeMusicManager : MonoBehaviour
         //A timer that constantly goes up.
             musicTimer += Time.deltaTime;
 
-
+        //__________________________________________________________________________________________________________________
         //This first check is if we allow the player to play music too quick and then have it possibly go too fast.
         //This can be turned into an 8th beat by setting up a second string list that records these too quick beats and thus wont disturb the first list.
         //we check essentially if the player is playing too fast and thus goes off beat. (this does not currently support 8th notes, and likely never will. but could if needed)
@@ -53,7 +56,7 @@ public class PrimeMusicManager : MonoBehaviour
             }
         }
         */
-
+            //________________________________________________________________________________________________________________
         
             //check if a note is played within the reaction time frame and not outside of it.
         if ((currentNote != " ") && (musicTimer <= musicalInterval + reactionTime) && (musicTimer >= musicalInterval))
@@ -64,6 +67,7 @@ public class PrimeMusicManager : MonoBehaviour
             bardSong.Remove(0, 1);
                 bardSong += currentNote; 
                 Debug.Log("Current list = " + bardSong);
+            currentNote = " ";
             musicTimer = 0;
         }
 
@@ -84,17 +88,17 @@ public class PrimeMusicManager : MonoBehaviour
     //Here we check to play the sound of an envoirment object. 
     void OnCollisionEnter(Collision other)
     {
+        Collider playerCollider = other.contacts[0].thisCollider; //This should allow the playerCollider to work as the colliding object
         Debug.Log("Annie are you working? are you working? Are you working annie?!");
 
-        if (other.gameObject.tag == "SoundTrigger")        //when this note colides with the Note player
+        if (playerCollider.gameObject.tag == "SoundTrigger")        //when this note colides with the Note player
         {
-            /*
-            switch (// Here we add a string from the trigger object. but it hasnt been written yet *)
+            switch (other.gameObject.GetComponent<musicObjectCode>().assignedNote)
             {
-                case "a note": //regular example
-                //Debug.Log("Play audio 'a note'.");
+                case "1": //The tutorial bell
+                Debug.Log("The tutorial bell was rung.");
                 //set currentNote to the note in question
-                currentNote = string.Format("{0}!", currentNote)
+                currentNote = "1";
                 break;
 
                 case " ":
@@ -104,7 +108,6 @@ public class PrimeMusicManager : MonoBehaviour
 
                 break;
             }
-            */
         }
 
     }
