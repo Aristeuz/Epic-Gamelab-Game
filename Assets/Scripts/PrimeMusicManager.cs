@@ -67,6 +67,7 @@ public class PrimeMusicManager : MonoBehaviour
             bardSong.Remove(0, 1);
                 bardSong += currentNote; 
                 Debug.Log("Current list = " + bardSong);
+            playNotes();
             currentNote = " ";
             musicTimer = 0;
         }
@@ -83,7 +84,7 @@ public class PrimeMusicManager : MonoBehaviour
     }
 
     //Here we check to play the sound of an envoirment object.
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerStay(Collider other)
     {
         //Collider playerCollider = other.contacts[0].thisCollider; //This should allow the playerCollider to work as the colliding object
         Debug.Log("Annie are you working? are you working? Are you working annie?!");
@@ -111,7 +112,51 @@ public class PrimeMusicManager : MonoBehaviour
 
     }
 
- 
+    void playNotes()
+    {
+        switch (currentNote)
+        {
+            case "a":
+            //Debug.Log("Play audio A note.");
+            a3.Play();
+            break;
+
+            case "b":
+            //Debug.Log("Play audio B note.");
+            b3.Play();
+            break;
+
+            case "c":
+            //Debug.Log("Play audio C note.");
+            c3.Play();
+            break;
+
+            case "d":
+            //Debug.Log("Play audio D note.");
+            d3.Play();
+            break;
+
+            case "e":
+            //Debug.Log("Play audio E note.");
+            e3.Play();
+            break;
+
+            case "f":
+            //Debug.Log("Play audio F note.");
+            f3.Play();
+            break;
+
+            case "1":
+            Debug.Log("Play audio tutorial bell note.");
+            g3.Play();
+            break;
+
+            case " ":
+            //Debug.Log("empty note, no audio.");
+            //no audio play.
+            break;
+        }
+    }
 
     void BrokenChain()
     {

@@ -13,7 +13,7 @@ public class SkillButtons : MonoBehaviour
     //I'm guessing it gets the actual notes from there, maybe we need to make a deticated note holder?
     public void playNote(int noteIndex)
     {
-        note[noteIndex].Play();
+        //note[noteIndex].Play();
     }
 
     //This is for an extra thing the "skill" can do, in this case it just spawns a ball.
