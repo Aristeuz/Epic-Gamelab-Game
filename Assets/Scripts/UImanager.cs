@@ -16,7 +16,7 @@ public class UImanager : MonoBehaviour
     void Start()
     {
         primeMusic = GameObject.Find("Player/PlayerCollider");
-        Debug.Log (primeMusic.name);
+        //Debug.Log (primeMusic.name);
         //Keybinds
         action1 = KeyCode.Alpha1;
         action2 = KeyCode.Alpha2;
