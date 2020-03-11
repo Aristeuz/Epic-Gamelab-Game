@@ -10,6 +10,8 @@ public class ClickToMove : MonoBehaviour
     private Vector3 position;
     int layer_ground;
     int layer_UI;
+
+    int layerMask = 1 << 8;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,7 @@ public class ClickToMove : MonoBehaviour
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
         {
             //If it hits the Ground go there.
             if (hit.collider.tag == "Ground")

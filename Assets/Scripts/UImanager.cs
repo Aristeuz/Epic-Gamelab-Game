@@ -27,6 +27,7 @@ public class UImanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Clicking on the buttons with the mouse doesn't play sounds for some reason.
         if (Input.GetKeyDown(action1))
         {
             ActionButtonOnClick(0);
@@ -53,6 +54,5 @@ public class UImanager : MonoBehaviour
     private void ActionButtonOnClick(int buttonIndex)
     {
         actionButtons[buttonIndex].onClick.Invoke();
-        
     }
 }
