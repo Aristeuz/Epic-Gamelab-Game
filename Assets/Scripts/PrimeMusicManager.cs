@@ -84,23 +84,26 @@ public class PrimeMusicManager : MonoBehaviour
     }
 
     //Here we check to play the sound of an envoirment object.
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         //Collider playerCollider = other.contacts[0].thisCollider; //This should allow the playerCollider to work as the colliding object
-        Debug.Log("Annie are you working? are you working? Are you working annie?!");
 
-        if (other.gameObject.CompareTag("SoundTrigger"))        //when this note colides with the Note player
+        Debug.Log(other.gameObject.name);
+
+        if (other.tag == "SoundTrigger")        //when this note colides with the Note player
         {
+            //Debug.Log("Annie are you working? are you working? Are you working annie?!");
+
             switch (other.gameObject.GetComponent<musicObjectCode>().assignedNote)
             {
                 case "1": //The tutorial bell
-                Debug.Log("The tutorial bell was rung.");
+                //Debug.Log("The tutorial bell was rung.");
                 //set currentNote to the note in question
                 currentNote = "1";
                 break;
 
                 case " ":
-                Debug.Log("empty note, no audio.");
+                //Debug.Log("empty note, no audio.");
                 currentNote = " ";
                 //This is an exception case. Not sure when it would be needed.
 
@@ -147,7 +150,7 @@ public class PrimeMusicManager : MonoBehaviour
             break;
 
             case "1":
-            Debug.Log("Play audio tutorial bell note.");
+            //Debug.Log("Play audio tutorial bell note.");
             g3.Play();
             break;
 
