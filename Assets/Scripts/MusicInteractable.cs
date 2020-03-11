@@ -24,13 +24,13 @@ public class MusicInteractable : MonoBehaviour
     void Update()
     {
         //Updates the current bardsong.
-        bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Substring(bardSongLength - solutionLength);
-        //Debug.Log("LastFew " + bardSong.Substring(bardSongLength - solutionLength));
+        bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Substring(bardSong.Length - solutionLength);
+        //Debug.Log("LastFew " + bardSong.Substring(bardSong.Length - solutionLength));
 
-        if (bardSong.Substring(bardSongLength - solutionLength) == triggerSolution)
+        if (bardSong.Substring(bardSong.Length - solutionLength) == triggerSolution)
         {
             Debug.Log("OPEN THE GATE!");
             transform.position = new Vector3(transform.position.x, transform.position.y, 1);
         }
-    }
+        }
 }
