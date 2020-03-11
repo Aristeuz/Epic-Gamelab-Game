@@ -30,7 +30,7 @@ public class PrimeMusicManager : MonoBehaviour
 
 
 
-    void FixedUpdate()
+    void Update()
     {
         //A timer that constantly goes up.
             musicTimer += Time.deltaTime;

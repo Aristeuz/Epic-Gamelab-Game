@@ -8,37 +8,29 @@ public class MusicInteractable : MonoBehaviour
     public string triggerSolution = "";
     private int solutionLength;
     private int bardSongLength;
+
+    private string bardSong;
     // Start is called before the first frame update
     void Start()
     {
         //Figure out how long the TriggerSolution is and record that.
         solutionLength = triggerSolution.Length;
-
         bardSongLength = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Length;
+
+        bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+        //Updates the current bardsong.
+        bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Substring(bardSongLength - solutionLength);
+        //Debug.Log("LastFew " + bardSong.Substring(bardSongLength - solutionLength));
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "MusicRangeCollider")
+        if (bardSong.Substring(bardSongLength - solutionLength) == triggerSolution)
         {
-            if (playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Substring(bardSongLength - solutionLength) == triggerSolution) 
-                                                        //https://answers.unity.com/questions/435275/get-the-last-four-characters-off-a-string.html
-            {
-                //open door
-                
-                Debug.Log("Door opening");
-
-                //oof what a shitty door opening.
-                this.gameObject.transform.position.z.Equals(-10);
-            }
+            Debug.Log("OPEN THE GATE!");
+            transform.position = new Vector3(transform.position.x, transform.position.y, 1);
         }
-
-                
     }
 }
