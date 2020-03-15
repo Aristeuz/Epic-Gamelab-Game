@@ -14,8 +14,14 @@ public class PrimeMusicManager : MonoBehaviour
     public string bardSong = "                "; //starting state is 16 blanks. (this can be increased or decreased depending on the amount we wish to track.
     public string currentNote = " ";
     public float musicTimer = 0;
-    public float musicalInterval = 2; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
-    public float reactionTime = 0.5f;
+    public float musicalInterval = 2f; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
+
+
+    private float bpm = 80f;
+    private float convertedBPM = 0f;
+    private float reactionTime = 0f;
+
+    public GameObject testParticle;
 
     //public Collider playerCollider; we should probebly just add this to the player and then direct this to the bubble..
     public Collider MusicRangeCollider; //Not sure if we need to add this~
@@ -29,8 +35,16 @@ public class PrimeMusicManager : MonoBehaviour
     public AudioSource g3;
 
 
+    void Start()
+    {
+        convertedBPM = (1/(bpm/60)); //calculating how many beats per minute there are
+        Debug.Log("Converted is equal to: " + convertedBPM);
 
-    void Update()
+        //calculate the extra reaction time after the beat to be a quarter over the total amount
+        reactionTime = (convertedBPM / 4);
+    }
+
+    void FixedUpdate()
     {
         //A timer that constantly goes up.
             musicTimer += Time.deltaTime;
@@ -59,7 +73,7 @@ public class PrimeMusicManager : MonoBehaviour
             //________________________________________________________________________________________________________________
         
             //check if a note is played within the reaction time frame and not outside of it.
-        if ((currentNote != " ") && (musicTimer <= musicalInterval + reactionTime) && (musicTimer >= musicalInterval))
+        if ((currentNote != " ") && (musicTimer <= convertedBPM + reactionTime) && (musicTimer >= convertedBPM))
         {
             //Play said note
                 //I imagine we create a seperate void that we call here that will play the correct note according to a switch statement.
@@ -73,13 +87,13 @@ public class PrimeMusicManager : MonoBehaviour
         }
 
         //we check if the player missed the reactionTime frame
-        else if (musicTimer >= (musicalInterval + reactionTime))
+        else if (musicTimer >= (convertedBPM + reactionTime))
         {
             //remove the first letter of bardSong
             //add a blankNote at the end of bardSong
             bardSong.Remove(0, 1);
             bardSong += currentNote;
-            musicTimer = (reactionTime / 2); //(we're compensating for the time we acounted for reaction time. wether to take the full reaction time or only a bit I'm not sure. playtesting req.
+            musicTimer = reactionTime; //(we're compensating for the time we acounted for reaction time. wether to take the full reaction time or only a bit I'm not sure. playtesting req.
         }
     }
 
@@ -122,36 +136,43 @@ public class PrimeMusicManager : MonoBehaviour
             case "a":
             //Debug.Log("Play audio A note.");
             a3.Play();
+            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "b":
             //Debug.Log("Play audio B note.");
             b3.Play();
+            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "c":
             //Debug.Log("Play audio C note.");
             c3.Play();
+            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "d":
             //Debug.Log("Play audio D note.");
             d3.Play();
+            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "e":
             //Debug.Log("Play audio E note.");
             e3.Play();
+            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "f":
             //Debug.Log("Play audio F note.");
             f3.Play();
+            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "1":
             //Debug.Log("Play audio tutorial bell note.");
             g3.Play();
+            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case " ":

@@ -4237,6 +4237,17 @@ PrefabInstance:
       propertyPath: g3
       value: 
       objectReference: {fileID: 917880029607001317}
+    - target: {fileID: 8105464441295360517, guid: 7bbc56d0f3dfdf8419e57adda726c20b,
+        type: 3}
+      propertyPath: testParticle
+      value: 
+      objectReference: {fileID: 2871763662135626057, guid: 20d00c0742e4c7b449906184c1eb8ee8,
+        type: 3}
+    - target: {fileID: 8105464441295360517, guid: 7bbc56d0f3dfdf8419e57adda726c20b,
+        type: 3}
+      propertyPath: bpm
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bbc56d0f3dfdf8419e57adda726c20b, type: 3}
 --- !u!1001 &8433032982220429215
