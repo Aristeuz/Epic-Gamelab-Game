@@ -21,7 +21,10 @@ public class PrimeMusicManager : MonoBehaviour
     private float convertedBPM = 0f;
     private float reactionTime = 0f;
 
-    public GameObject testParticle;
+    public GameObject particleA;
+    public GameObject particleB;
+    public GameObject particleC;
+    public GameObject particleD;
 
     //public Collider playerCollider; we should probebly just add this to the player and then direct this to the bubble..
     public Collider MusicRangeCollider; //Not sure if we need to add this~
@@ -136,43 +139,43 @@ public class PrimeMusicManager : MonoBehaviour
             case "a":
             //Debug.Log("Play audio A note.");
             a3.Play();
-            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            Instantiate(particleA, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "b":
             //Debug.Log("Play audio B note.");
             b3.Play();
-            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            Instantiate(particleB, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "c":
             //Debug.Log("Play audio C note.");
             c3.Play();
-            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            Instantiate(particleC, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "d":
             //Debug.Log("Play audio D note.");
             d3.Play();
-            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            Instantiate(particleD, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "e":
             //Debug.Log("Play audio E note.");
             e3.Play();
-            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            Instantiate(particleA, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "f":
             //Debug.Log("Play audio F note.");
             f3.Play();
-            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            Instantiate(particleA, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "1":
             //Debug.Log("Play audio tutorial bell note.");
             g3.Play();
-            Instantiate(testParticle, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            Instantiate(particleA, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case " ":
