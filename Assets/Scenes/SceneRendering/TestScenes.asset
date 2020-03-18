@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953beb541740ddc499d005ee80c9ff29, type: 3}
   m_Name: Fog
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   enabled:
     m_OverrideState: 1
@@ -178,7 +178,7 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.21960782, g: 0.24303602, b: 0.6509804, a: 1}
+    m_Value: {r: 0.21960782, g: 0.6509804, b: 0.52417123, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -204,7 +204,7 @@ MonoBehaviour:
     m_Value: 0
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 13.68
+    m_Value: 20.55
   albedo:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
