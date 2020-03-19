@@ -178,7 +178,7 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.08076719, g: 0.31132078, b: 0.24425066, a: 1}
+    m_Value: {r: 0.019607853, g: 0.4862745, b: 0.30939573, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -201,10 +201,10 @@ MonoBehaviour:
     min: 0
   baseHeight:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 21
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 20.55
+    m_Value: 22
   albedo:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -315,7 +315,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 3.14
+    m_Value: 4
     min: 0
     max: 4
   directLightingStrength:
