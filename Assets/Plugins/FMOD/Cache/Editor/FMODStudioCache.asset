@@ -58,6 +58,24 @@ MonoBehaviour:
   - Name: Desktop
     Value: 736
   Exists: 1
+--- !u!114 &-6340078656786194382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODfile/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637196344590860702
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5087222660887956855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +137,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 679
+--- !u!114 &-3160344839757289661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODfile/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637201589320742524
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2146085241031601984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +196,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 679
+--- !u!114 &-190177576447793470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMODfile/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637196344590891072
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 736
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,16 +229,16 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4131749039709699280}
-  - {fileID: 8324849913591108194}
+  - {fileID: -190177576447793470}
+  - {fileID: -6340078656786194382}
   EditorEvents:
-  - {fileID: 7729544793008956409}
+  - {fileID: 3773835882233534272}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8324849913591108194}
+  - {fileID: -6340078656786194382}
   StringsBanks:
-  - {fileID: 4131749039709699280}
-  stringsBankWriteTime: 637198685282824742
+  - {fileID: -190177576447793470}
+  stringsBankWriteTime: 637196344590891072
   cacheVersion: 3
 --- !u!114 &2588889476443385640
 MonoBehaviour:
@@ -202,6 +258,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &3773835882233534272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Notes test
+  m_EditorClassIdentifier: 
+  Path: event:/Notes test
+  guid: dc8e75352d03fc4cbca84c103d901e78
+  Banks:
+  - {fileID: -6340078656786194382}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 679
 --- !u!114 &4131749039709699280
 MonoBehaviour:
   m_ObjectHideFlags: 0
