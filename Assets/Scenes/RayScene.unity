@@ -5828,7 +5828,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 9810
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.07e-43, y: 0.000000014229336, z: 5.07e-43, w: -0.19989824}
+  m_BoundingSphereOverride: {x: 4.432e-42, y: -0.0000000035394923, z: 8.28e-43, w: 1.5e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -13089,7 +13089,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504142189}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10a698b58c736104f9920d4c6a0c2b1c, type: 3}
   m_Name: 
@@ -21218,7 +21218,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'If you play the (1) first note
 
-    the bell begins to glow.'
+    the bell begins to glow.
+
+    (In
+    order to remove the rubble perss one, then touch the bell right after)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21263,7 +21266,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 93
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -21287,12 +21290,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1718742672}
-    characterCount: 55
+    characterCount: 130
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 12
+    spaceCount: 25
+    wordCount: 26
     linkCount: 0
-    lineCount: 2
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -28103,7 +28106,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You now also get the 2nd\nnote. \nIf you play the first note (1)\nan orb
     on the door glows.\nthere are a total of two orbs.\nIf you wait, the first orb
-    dims again"
+    dims again\n(In order to open the door press 1 and then 2)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -28172,12 +28175,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1812853631}
-    characterCount: 157
+    characterCount: 204
     spriteCount: 0
-    spaceCount: 35
-    wordCount: 35
+    spaceCount: 46
+    wordCount: 46
     linkCount: 0
-    lineCount: 6
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -28974,7 +28977,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897061039}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10a698b58c736104f9920d4c6a0c2b1c, type: 3}
   m_Name: 
