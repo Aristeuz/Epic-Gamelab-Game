@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 
 /* welcome to the Prime Music Manager, this code basically tracks the notes played and if the player is colliding with scenery objects that might make sounds.
@@ -176,6 +177,7 @@ public class PrimeMusicManager : MonoBehaviour
             //Debug.Log("Play audio tutorial bell note.");
             g3.Play();
             Instantiate(particleA, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+            CameraShaker.Instance.ShakeOnce(2f, 6f, 0.5f, 2f);//Camerashake for this note.
             break;
 
             case " ":

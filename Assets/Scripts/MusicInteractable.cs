@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class MusicInteractable : MonoBehaviour
 {
@@ -20,9 +21,12 @@ public class MusicInteractable : MonoBehaviour
     public _actionType actionType; //Connected with the Enums script.
     private bool canActivate = true;
 
+
     //target to where it moves to and how fast.
     public Transform moveTo = null;
     public float moveSpeed;
+    public bool withShake = true;
+    private bool isMoving = false;
     //==========================================================================
 
     // Start is called before the first frame update
@@ -62,9 +66,20 @@ public class MusicInteractable : MonoBehaviour
             }
             else if (actionType == _actionType.move)
             {
-                slowlyMove();
+                isMoving = true;
             }
         }
+
+        //====Makes it keep moving and stop when it reaches it's end point====
+        if (isMoving == true)
+        {
+            slowlyMove();
+        }
+        if (transform.position == moveTo.position)
+        {
+            isMoving = false;
+        }
+        //=====================================================================
     }
 
     //Makes the object move to a certain location, with a certain speed within the time of the next beat.
@@ -74,11 +89,14 @@ public class MusicInteractable : MonoBehaviour
         float step = moveSpeed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, moveTo.position, step);
 
+        //Makes sure that you can't activate it once it has been activated.
         StartCoroutine(ExecuteAfterTime(1));
         IEnumerator ExecuteAfterTime(float time)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.1f);
             //Debug.Log("OPEN THE GATE!");
+            if (withShake == true)
+                CameraShaker.Instance.ShakeOnce(0.3f, 4f, 0.5f, 0.1f);
             if (canActivate == true)
                 canActivate = false;
         }

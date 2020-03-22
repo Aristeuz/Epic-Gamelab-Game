@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: b586a6c9cb2406c478bc0bf9f7c57f2d
+guid: 2ab8353b5ebd32545867da143199a814
+labels:
+- Shake
+- Camera
+- Follow
+- Animation
+- Effect
 MonoImporter:
-  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 

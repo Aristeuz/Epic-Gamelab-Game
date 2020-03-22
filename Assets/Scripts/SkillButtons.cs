@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkillButtons : MonoBehaviour
 {
     //Makes arrays that you can fill in, inside Unity.
-    public GameObject[] skill;
+    //public GameObject[] skill;
     public AudioSource[] note;
 
 
@@ -18,8 +18,10 @@ public class SkillButtons : MonoBehaviour
 
     //This is for an extra thing the "skill" can do, in this case it just spawns a ball.
     //Could not figure out how I could let them work both in the same function. So they are seperate.
+    /*
     public void playSkill(int skillIndex)
     {
         Instantiate(skill[skillIndex], transform.position, transform.rotation);
     }
+    */
 }
