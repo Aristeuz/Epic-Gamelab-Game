@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+#if UNITY_EDITOR
 using UnityEditor;
 
 //The editor for the music interacables, it doesn't have to be attatched to anything.
@@ -15,3 +17,4 @@ public class MusicInteractableEditor : Editor
         Handles.DrawWireArc(interactable.transform.position, Vector3.up, Vector3.forward, 360, interactable.activationRange);
     }
 }
+#endif
