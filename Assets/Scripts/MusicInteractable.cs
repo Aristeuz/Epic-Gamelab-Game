@@ -15,8 +15,9 @@ public class MusicInteractable : MonoBehaviour
     private string bardSong;
 
     [Range(0, 100)]
-    public float activationRange = 20f;
-
+    public float activationRangeWidth = 20f;
+    [Range(0, 20)]
+    public float activationRangeHeight = 5f;
     //====Everything that has to do with what can happen after "activation"====
     public _actionType actionType; //Connected with the Enums script.
     private bool canActivate = true;
@@ -27,6 +28,9 @@ public class MusicInteractable : MonoBehaviour
     public float moveSpeed;
     public bool withShake = true;
     private bool isMoving = false;
+
+    //For spawning in the glow object
+    public GameObject glowObject;
     //==========================================================================
 
     // Start is called before the first frame update
@@ -35,17 +39,22 @@ public class MusicInteractable : MonoBehaviour
         player = GameObject.Find("Player");
         playerLocation = player.transform;
 
-        //If the target is empty find it's child targetlocation.
+        //If the target is empty find itself so it doesn't cause an error.
         if (moveTo == null)
-            moveTo = this.gameObject.transform; //.GetChild(0);
-
-
+            moveTo = this.gameObject.transform; //.GetChild(0); (if it has to look for child?)
 
         //Figure out how long the TriggerSolution is and record that.
         solutionLength = triggerSolution.Length;
         bardSongLength = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Length;
 
         bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong;
+
+        //If it is set to glow, deactivate the "musicObjectCode", so it can be activated later, once the player plays the right note first.
+        if (actionType == _actionType.glow)
+        {
+            if (GetComponent<musicObjectCode>())
+                GetComponent<musicObjectCode>().enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -55,9 +64,12 @@ public class MusicInteractable : MonoBehaviour
         //Updates the current bardsong.
         bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Substring(bardSong.Length - solutionLength);
 
-        float distdistanceToPlayer = Vector3.Distance(playerLocation.position, transform.position);//find distance between player and object, so it can only activate within a certain range.
+        float distanceToPlayerXZ = transform.position.FlatDistanceTo(playerLocation.position); //find distance between player and object X axis and Z axis.
 
-        if (bardSong.Substring(bardSong.Length - solutionLength) == triggerSolution && distdistanceToPlayer < activationRange && canActivate == true)
+        if (bardSong.Substring(bardSong.Length - solutionLength) == triggerSolution && 
+            distanceToPlayerXZ <= activationRangeWidth && //Checking width
+            Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight && //Checking height
+            canActivate == true)
         {
             //Checks what "action" has been selected for this object.
             if (actionType == _actionType.destroySelf)
@@ -67,6 +79,10 @@ public class MusicInteractable : MonoBehaviour
             else if (actionType == _actionType.move)
             {
                 isMoving = true;
+            }
+            else if (actionType == _actionType.glow)
+            {
+                startGlow();
             }
         }
 
@@ -105,7 +121,19 @@ public class MusicInteractable : MonoBehaviour
     //Destroys itself, there is also the posibility to instantiate an effect or another object before it is destroyed.
     void destroySelf()
     {
-        Debug.Log("OPEN THE GATE!");
+        //Debug.Log("OBJECT DESTROYED!");
         Destroy(this.gameObject);
+    }
+
+    //Starts glowing (IF THE GLOW ACTION IS SELECTED IT AUTOMATICALLY DISABLES THE MUSIC OBJECT CODE UNTILL THE RIGHT NOTE IS PLAYED)
+    void startGlow()
+    {
+        Debug.Log("GLOW!");
+        if (GetComponent<musicObjectCode>()) //Just checking if this script excists, then activates it.
+        {
+            Instantiate(glowObject, transform.position, transform.rotation);
+            GetComponent<musicObjectCode>().enabled = true;
+            canActivate = false;
+        }
     }
 }

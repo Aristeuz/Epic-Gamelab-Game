@@ -13,8 +13,10 @@ public class MusicInteractableEditor : Editor
     private void OnSceneGUI()
     {
         MusicInteractable interactable = (MusicInteractable)target;
-        Handles.color = Color.green;
-        Handles.DrawWireArc(interactable.transform.position, Vector3.up, Vector3.forward, 360, interactable.activationRange);
+        Handles.color = Color.cyan;
+        Handles.DrawWireArc(interactable.transform.position, Vector3.up, Vector3.forward, 360, interactable.activationRangeWidth);
+        Handles.DrawWireArc(interactable.transform.position + Vector3.up * interactable.activationRangeHeight, Vector3.up, Vector3.forward, 360, interactable.activationRangeWidth);
+        Handles.DrawWireArc(interactable.transform.position - Vector3.up * interactable.activationRangeHeight, Vector3.up, Vector3.forward, 360, interactable.activationRangeWidth);
     }
 }
 #endif

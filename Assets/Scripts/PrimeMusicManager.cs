@@ -110,26 +110,25 @@ public class PrimeMusicManager : MonoBehaviour
 
         if (other.tag == "SoundTrigger")        //when this note colides with the Note player
         {
-            //Debug.Log("Annie are you working? are you working? Are you working annie?!");
-
-            switch (other.gameObject.GetComponent<musicObjectCode>().assignedNote)
+            if (other.gameObject.GetComponent<musicObjectCode>().enabled == true)
             {
-                case "1": //The tutorial bell
-                //Debug.Log("The tutorial bell was rung.");
-                //set currentNote to the note in question
-                currentNote = "1";
-                break;
+                switch (other.gameObject.GetComponent<musicObjectCode>().assignedNote)
+                {
+                    case "1": //The tutorial bell
+                    //Debug.Log("The tutorial bell was rung.");
+                    //set currentNote to the note in question
+                    currentNote = "1";
+                    break;
 
-                case " ":
-                //Debug.Log("empty note, no audio.");
-                currentNote = " ";
-                //This is an exception case. Not sure when it would be needed.
+                    case " ":
+                    //Debug.Log("empty note, no audio.");
+                    currentNote = " ";
+                    //This is an exception case. Not sure when it would be needed.
 
-                break;
+                    break;
+                }
             }
         }
-
-
 
     }
 

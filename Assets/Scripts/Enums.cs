@@ -5,5 +5,6 @@ public enum _actionType
 
 {
     destroySelf,
-    move
+    move,
+    glow
 }
