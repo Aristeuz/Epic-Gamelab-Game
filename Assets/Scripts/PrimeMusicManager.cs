@@ -52,7 +52,6 @@ public class PrimeMusicManager : MonoBehaviour
     {
         //A timer that constantly goes up.
             musicTimer += Time.deltaTime;
-
         //__________________________________________________________________________________________________________________
         //This first check is if we allow the player to play music too quick and then have it possibly go too fast.
         //This can be turned into an 8th beat by setting up a second string list that records these too quick beats and thus wont disturb the first list.
@@ -106,27 +105,39 @@ public class PrimeMusicManager : MonoBehaviour
     {
         //Collider playerCollider = other.contacts[0].thisCollider; //This should allow the playerCollider to work as the colliding object
 
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
 
         if (other.tag == "SoundTrigger")        //when this note colides with the Note player
         {
-            if (other.gameObject.GetComponent<musicObjectCode>().enabled == true)
+            if (other.gameObject.GetComponent<musicObjectCode>())
             {
-                switch (other.gameObject.GetComponent<musicObjectCode>().assignedNote)
+                if (other.gameObject.GetComponent<musicObjectCode>().enabled == true) // checks if this script even exists in the object
                 {
-                    case "1": //The tutorial bell
-                    //Debug.Log("The tutorial bell was rung.");
-                    //set currentNote to the note in question
-                    currentNote = "1";
-                    break;
+                    switch (other.gameObject.GetComponent<musicObjectCode>().assignedNote)
+                    {
+                        case "1": //The tutorial bell
+                        //Debug.Log("The tutorial bell was rung.");
+                        //set currentNote to the note in question
+                        currentNote = "1";
+                        break;
 
-                    case " ":
-                    //Debug.Log("empty note, no audio.");
-                    currentNote = " ";
-                    //This is an exception case. Not sure when it would be needed.
+                        case "a": 
+                        currentNote = "a";
+                        break;
 
-                    break;
+                        case "b": 
+                        currentNote = "b";
+                        break;
+
+                        case " ":
+                        //Debug.Log("empty note, no audio.");
+                        currentNote = " ";
+                        //This is an exception case. Not sure when it would be needed.
+
+                        break;
+                    }
                 }
+
             }
         }
 
