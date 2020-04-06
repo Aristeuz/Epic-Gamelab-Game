@@ -12,7 +12,7 @@ public class SequencePuzzleObject : MusicInteractable
 
     private Transform firstChild;
     private Light myLight;
-    Color color1 = Color.blue;
+    Color color1 = Color.white;
 
     [Range(0, 10)]
     public float activationRange = 5f;
@@ -90,7 +90,7 @@ public class SequencePuzzleObject : MusicInteractable
 
     public void activated()
     {
-        myLight.intensity = 10;
+        myLight.intensity = 20;
         myLight.color = color1;
     }
 

@@ -285,7 +285,6 @@ GameObject:
   - component: {fileID: 85948903}
   - component: {fileID: 85948902}
   - component: {fileID: 85948901}
-  - component: {fileID: 85948905}
   - component: {fileID: 85948907}
   m_Layer: 0
   m_Name: Cylinder (2)
@@ -370,23 +369,6 @@ Transform:
   m_Father: {fileID: 38505086}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &85948905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85948900}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a698b58c736104f9920d4c6a0c2b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCollider: {fileID: 1641801162}
-  triggerSolution: 1
-  activationRangeWidth: 3
-  activationRangeHeight: 1
-  withShake: 0
 --- !u!114 &85948907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +414,7 @@ PrefabInstance:
     - target: {fileID: 8433032981351915398, guid: d65cd13ec16f2a247bcee01aad8b6d15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.37
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8433032981351915398, guid: d65cd13ec16f2a247bcee01aad8b6d15,
         type: 3}
@@ -3444,7 +3426,6 @@ GameObject:
   - component: {fileID: 1090308459}
   - component: {fileID: 1090308458}
   - component: {fileID: 1090308457}
-  - component: {fileID: 1090308461}
   - component: {fileID: 1090308463}
   m_Layer: 0
   m_Name: Cylinder (3)
@@ -3529,23 +3510,6 @@ Transform:
   m_Father: {fileID: 38505086}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1090308461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090308456}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a698b58c736104f9920d4c6a0c2b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCollider: {fileID: 1641801162}
-  triggerSolution: 1
-  activationRangeWidth: 3
-  activationRangeHeight: 1
-  withShake: 0
 --- !u!114 &1090308463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15902,7 +15866,6 @@ GameObject:
   - component: {fileID: 1806148899}
   - component: {fileID: 1806148898}
   - component: {fileID: 1806148905}
-  - component: {fileID: 1806148902}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: SoundTrigger
@@ -15986,7 +15949,7 @@ Transform:
   m_Father: {fileID: 38505086}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1806148902
+--- !u!114 &1806148905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15995,32 +15958,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1806148897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c983585ac39554bb330b1b29d22f22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCollider: {fileID: 0}
-  triggerSolution: 
-  activationRangeWidth: 12.1
-  activationRangeHeight: 5
-  withShake: 1
-  moveTo: {fileID: 0}
-  moveSpeed: 0
---- !u!114 &1806148905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806148897}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adc62542d7a3c124dbccea73cefbe0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollider: {fileID: 1641801162}
   triggerSolution: a
-  activationRangeWidth: 13.6
-  activationRangeHeight: 5
+  activationRangeWidth: 3
+  activationRangeHeight: 1
   withShake: 1
   sequencePuzzle: {fileID: 0}
   order: 0
@@ -16120,7 +16064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843995768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.19487, y: 18.00712, z: -34.27114}
+  m_LocalPosition: {x: 25.19487, y: 18.00712, z: -34.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1060181900}
