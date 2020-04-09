@@ -13,9 +13,10 @@ public class SequencePuzzleObject : MusicInteractable
     private Transform firstChild;
     private Light myLight;
     Color color1 = Color.white;
+    Color color2 = Color.red;
 
-    [Range(0, 10)]
-    public float activationRange = 5f;
+    //[Range(0, 10)]
+    //public float activationRange = 5f;
 
     //Eveything between ~~~~~~ is from PrimeMusicManager copypasted, could be made smoother with a connection.
     //It is only used for the bpm time in this case.
@@ -27,12 +28,6 @@ public class SequencePuzzleObject : MusicInteractable
     private float reactionTime = 0f;
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    
-    //Eveything between ======= is from MusicInteractable copypasted, could be made smoother with a connection.
-    //==============================================================================================================
-
-    //==============================================================================================================
-    
 
     // Start is called before the first frame update
     protected override void Start()
@@ -58,13 +53,24 @@ public class SequencePuzzleObject : MusicInteractable
 
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
-
-        if (musicTimer >= convertedBPM + reactionTime)   
+        
+        if (distanceToPlayerXZ <= activationRangeWidth && //Checking width
+            Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight //Checking height
+            )
         {
+            //Debug.Log(musicTimer);
+        }
+        
+
+        if (musicTimer >= convertedBPM + reactionTime + 0.1f) //The 0.1 gives a little delay before checking  
+        {
+            //Debug.Log(this.gameObject.name + " CHECK! " + canActivate);
+            //Debug.Log(this.gameObject.name + " " + canActivate);
             //Debug.Log("Current list = " + bardSong);
             //Should not listen to what is on the list but to what the player played last. If we want it to 'feel' better for the player. We should look into the timing condition.
             if (bardSong.Substring(bardSong.Length - solutionLength) == triggerSolution && // if note is correct.
-            dist <= activationRange && //if player is close enough
+            distanceToPlayerXZ <= activationRangeWidth && //Checking width
+            Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight && //Checking height
             canActivate == true)
             {
                 correctNote = true;
@@ -72,14 +78,15 @@ public class SequencePuzzleObject : MusicInteractable
                 interact();
             }
             else if (bardSong.Substring(bardSong.Length - solutionLength) != triggerSolution && // if note is incorrect.
-            dist <= activationRange &&
+            distanceToPlayerXZ <= activationRangeWidth && //Checking width
+            Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight && //Checking height
             canActivate == true)
             {
                 correctNote = false;
                 canActivate = false;
                 interact();
             }
-            musicTimer = 0;
+            musicTimer = 0.1f;
         }
     }
 
@@ -96,7 +103,21 @@ public class SequencePuzzleObject : MusicInteractable
 
     public void deactivate()
     {
-        myLight.intensity = 0;
+        myLight.intensity = 20;
+        myLight.color = color2;
+        StartCoroutine(ExecuteAfterTime()); //Delay for giving red light (interactive feedback)
+
+        IEnumerator ExecuteAfterTime()
+        {
+            yield return new WaitForSeconds(0.2f);
+            myLight.color = color1;
+            myLight.intensity = 0;
+            canActivate = true;
+        }
+    }
+
+    public void smallReset()
+    {
         canActivate = true;
     }
 }

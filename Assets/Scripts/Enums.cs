@@ -8,3 +8,10 @@ public enum _actionType
     move,
     glow
 }
+
+public enum _noteUnlockType
+
+{
+    One,
+    Two
+}

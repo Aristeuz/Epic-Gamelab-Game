@@ -48,7 +48,7 @@ public class MusicInteractable : MonoBehaviour
         //Updates the current bardsong.
         bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Substring(bardSong.Length - solutionLength);
         //find distance between player and object X axis and Z axis.
-        float distanceToPlayerXZ = transform.position.FlatDistanceTo(playerLocation.position);
+        distanceToPlayerXZ = transform.position.FlatDistanceTo(playerLocation.position);
 
     }
 }

@@ -5,6 +5,7 @@ using EZCameraShake;
 
 public class DestroyEvent : MusicInteractable
 {
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -23,6 +24,12 @@ public class DestroyEvent : MusicInteractable
         {
             destroySelf();
         }
+    }
+
+    //This one is activated via Sequence Puzzle
+    public void activate()
+    {
+        destroySelf();
     }
 
     //Destroys itself, there is also the posibility to instantiate an effect or another object before it is destroyed.
