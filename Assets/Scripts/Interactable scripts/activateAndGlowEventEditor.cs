@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 //Need to fix this one a bit
-/*
+
 #if UNITY_EDITOR
 using UnityEditor;
 
@@ -23,4 +23,4 @@ public class activateAndGlowEventEditor : Editor
     }
 }
 #endif
-*/
+

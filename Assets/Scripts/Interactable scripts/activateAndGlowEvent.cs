@@ -32,6 +32,12 @@ public class activateAndGlowEvent : MusicInteractable
         }
     }
 
+    //This one is activated via Sequence Puzzle
+    public void activate()
+    {
+        startGlow();
+    }
+
     void startGlow()
     {
         if (GetComponent<musicObjectCode>()) //Just checking if this script excists, then activates it.

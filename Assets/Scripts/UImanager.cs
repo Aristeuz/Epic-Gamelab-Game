@@ -13,6 +13,11 @@ public class UImanager : MonoBehaviour
     private KeyCode action1, action2, action3, action4;
     public GameObject primeMusic;
 
+    [HideInInspector]
+    public bool unlockOne = false;
+    [HideInInspector]
+    public bool unlockTwo = false;
+
     void Start()
     {
         primeMusic = GameObject.Find("Player/PlayerCollider");
@@ -33,17 +38,17 @@ public class UImanager : MonoBehaviour
             ActionButtonOnClick(0);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("a");
         }
-        if (Input.GetKeyDown(action2))
+        if (Input.GetKeyDown(action2) && unlockOne == true)
         {
             ActionButtonOnClick(1);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("b");
         }
-        if (Input.GetKeyDown(action3))
+        if (Input.GetKeyDown(action3) && unlockTwo == true)
         {
             ActionButtonOnClick(2);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("c");
         }
-        if (Input.GetKeyDown(action4))
+        if (Input.GetKeyDown(action4) && unlockTwo == true)
         {
             ActionButtonOnClick(3);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("d");

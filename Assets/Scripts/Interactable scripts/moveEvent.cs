@@ -42,6 +42,12 @@ public class moveEvent : MusicInteractable
         }
     }
 
+    //This one is activated via Sequence Puzzle
+    public void activate()
+    {
+        slowlyMove();
+    }
+
     void slowlyMove()
     {
         float step = moveSpeed * Time.deltaTime;
