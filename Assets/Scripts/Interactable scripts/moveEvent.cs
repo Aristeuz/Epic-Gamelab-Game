@@ -45,6 +45,7 @@ public class moveEvent : MusicInteractable
     //This one is activated via Sequence Puzzle
     public void activate()
     {
+        isMoving = true;
         slowlyMove();
     }
 
@@ -58,7 +59,7 @@ public class moveEvent : MusicInteractable
         IEnumerator ExecuteAfterTime(float time)
         {
             yield return new WaitForSeconds(0.1f);
-            Debug.Log("OPEN THE GATE!");
+            //Debug.Log("OPEN THE GATE!");
             if (withShake == true)
                 CameraShaker.Instance.ShakeOnce(0.3f, 4f, 0.5f, 0.1f);
             if (canActivate == true)

@@ -40,6 +40,7 @@ public class SequencePuzzle : MonoBehaviour
     {
         if (timer > 0.1) //Used when two Activation ranges overlap.
         {
+            //Debug.Log("Order " + order + " CurrentNumber " + (currentNumber + 1));
             if (currentNumber + 1 == order && correctNote == true)
             {
                 Debug.Log(order + " GOOD");

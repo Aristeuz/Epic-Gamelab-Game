@@ -58,7 +58,7 @@ public class SequencePuzzleObject : MusicInteractable
             Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight //Checking height
             )
         {
-            //Debug.Log(musicTimer);
+            //Debug.Log("player");
         }
         
 
@@ -92,12 +92,13 @@ public class SequencePuzzleObject : MusicInteractable
 
     void interact()
     {
+        //Debug.Log("object " + order);
         sequencePuzzle.interact(order, correctNote); // in here also the boolean for correct note
     }
 
     public void activated()
     {
-        myLight.intensity = 20;
+        myLight.intensity = 50;
         myLight.color = color1;
     }
 
