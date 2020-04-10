@@ -177,14 +177,14 @@ Material:
     - _EnergyConservingSpecularColor: 1
     - _HdrpVersion: 2
     - _HeightAmplitude: 0.0407
-    - _HeightCenter: 0
+    - _HeightCenter: 0.013
     - _HeightMapParametrization: 1
     - _HeightMax: 4.48
     - _HeightMin: -3.17
     - _HeightOffset: 0
     - _HeightPoMAmplitude: 2
     - _HeightTessAmplitude: 4.07
-    - _HeightTessCenter: 0
+    - _HeightTessCenter: 0.013
     - _InvTilingScale: 1
     - _Ior: 1.5
     - _IridescenceMask: 1
