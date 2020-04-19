@@ -10,24 +10,27 @@ public class SequencePuzzleObject : MusicInteractable
     private bool correctNote = false;
     int correctnumber;
 
+    private bool activatedBool = false;
+
     private Transform firstChild;
     private Light myLight;
     Color color1 = Color.white;
     Color color2 = Color.red;
+    Color color3 = Color.blue;
 
-    //[Range(0, 10)]
-    //public float activationRange = 5f;
 
     //Eveything between ~~~~~~ is from PrimeMusicManager copypasted, could be made smoother with a connection.
     //It is only used for the bpm time in this case.
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    private float musicTimer = 0;
+    //private float musicTimer = 0f;
 
-    private float bpm = 80f;
-    private float convertedBPM = 0f;
-    private float reactionTime = 0f;
+    //private float bpm = 80f;
+    //private float convertedBPM = 0f;
+    //private float reactionTime = 0f;
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    //float _convertedBPM;
+    //float _reactionTime;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -37,8 +40,11 @@ public class SequencePuzzleObject : MusicInteractable
         myLight = firstChild.GetComponent<Light>();
 
         //~~~~~~~~~~~~~~~~~~~~~~~~~~
-        convertedBPM = (1 / (bpm / 60));
-        reactionTime = (convertedBPM / 4);
+        //convertedBPM = (1 / (bpm / 60));
+        //reactionTime = (convertedBPM / 4);
+
+        //_reactionTime = PrimeMusicManager.instance.reactionTime;
+        //_convertedBPM = PrimeMusicManager.instance.convertedBPM;
         //~~~~~~~~~~~~~~~~~~~~~~~~~
     }
 
@@ -48,60 +54,91 @@ public class SequencePuzzleObject : MusicInteractable
     {
         base.Update();
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        musicTimer += Time.deltaTime;
+        //musicTimer += Time.deltaTime;
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //_musicTimer = PrimeMusicManager.instance.musicTimer;
+
+        //If any of the keys are pressed.
+        if (Input.GetKeyDown(KeyCode.Alpha1) || 
+           Input.GetKeyDown(KeyCode.Alpha2) ||
+           Input.GetKeyDown(KeyCode.Alpha3) ||
+           Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            notePlayed = true;
+        }
+
 
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
-        
-        if (distanceToPlayerXZ <= activationRangeWidth && //Checking width
-            Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight //Checking height
-            )
-        {
-            //Debug.Log("player");
-        }
-        
+        //Debug.Log(PrimeMusicManager.instance.beat);
 
-        if (musicTimer >= convertedBPM + reactionTime + 0.1f) //The 0.1 gives a little delay before checking  
+        if (PrimeMusicManager.instance.beat == true)
         {
-            //Debug.Log(this.gameObject.name + " CHECK! " + canActivate);
-            //Debug.Log(this.gameObject.name + " " + canActivate);
+            //Debug.Log(this.gameObject.name + " notePlayed " + notePlayed );
+            //Debug.Log(this.gameObject.name);
             //Debug.Log("Current list = " + bardSong);
-            //Should not listen to what is on the list but to what the player played last. If we want it to 'feel' better for the player. We should look into the timing condition.
-            if (bardSong.Substring(bardSong.Length - solutionLength) == triggerSolution && // if note is correct.
-            distanceToPlayerXZ <= activationRangeWidth && //Checking width
-            Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight && //Checking height
-            canActivate == true)
+            if (notePlayed == true)
             {
-                correctNote = true;
-                canActivate = false;
-                interact();
+                if (bardSong.Substring(bardSong.Length - solutionLength) == triggerSolution && // if note is correct.
+                distanceToPlayerXZ <= activationRangeWidth && //Checking width
+                Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight && //Checking height
+                canActivate == true)
+                {
+                    correctNote = true;
+                    canActivate = false;
+                    react();
+                    interact();
+                }
+                else if (bardSong.Substring(bardSong.Length - solutionLength) != triggerSolution && // if note is incorrect.
+                distanceToPlayerXZ <= activationRangeWidth && //Checking width
+                Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight && //Checking height
+                canActivate == true)
+                {
+                    correctNote = false;
+                    canActivate = false;
+                    interact();
+                }
             }
-            else if (bardSong.Substring(bardSong.Length - solutionLength) != triggerSolution && // if note is incorrect.
-            distanceToPlayerXZ <= activationRangeWidth && //Checking width
-            Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight && //Checking height
-            canActivate == true)
-            {
-                correctNote = false;
-                canActivate = false;
-                interact();
-            }
-            musicTimer = 0.1f;
+            //musicTimer = 0f;
+            notePlayed = false;
         }
     }
 
     void interact()
     {
-        //Debug.Log("object " + order);
+        //Debug.Log("object order " + order);
         sequencePuzzle.interact(order, correctNote); // in here also the boolean for correct note
     }
 
+    //Activated and correct
     public void activated()
     {
         myLight.intensity = 50;
         myLight.color = color1;
+        activatedBool = true;
     }
 
+    //React() is for reacting to the right note being played. but not the right order. 
+    //Just some visual feedback for the player that this object contains the note the player just played.
+    void react()
+    {
+        myLight.intensity = 50;
+        myLight.color = color3;
+        StartCoroutine(ExecuteAfterTime());
+
+        IEnumerator ExecuteAfterTime()
+        {
+            yield return new WaitForSeconds(0.6f);
+            if (activatedBool == false)
+            {
+                myLight.color = color1;
+                myLight.intensity = 0;
+            }
+        }
+    }
+
+
+    //Reset pillar
     public void deactivate()
     {
         myLight.intensity = 20;
@@ -114,11 +151,14 @@ public class SequencePuzzleObject : MusicInteractable
             myLight.color = color1;
             myLight.intensity = 0;
             canActivate = true;
+            activatedBool = false;
         }
     }
 
+    //Small reset mainly for the first pillar if you have it wrong.
     public void smallReset()
     {
         canActivate = true;
+        activatedBool = false;
     }
 }
