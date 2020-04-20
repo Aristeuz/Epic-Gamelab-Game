@@ -21,6 +21,9 @@ public class MusicInteractable : MonoBehaviour
     [Range(0, 20)]
     public float activationRangeHeight = 5f;
 
+    [HideInInspector]
+    public bool notePlayed = false;
+    protected float _musicTimer;
 
     protected bool canActivate = true;
     public bool withShake = true;
@@ -49,7 +52,6 @@ public class MusicInteractable : MonoBehaviour
         bardSong = playerCollider.gameObject.GetComponent<PrimeMusicManager>().bardSong.Substring(bardSong.Length - solutionLength);
         //find distance between player and object X axis and Z axis.
         distanceToPlayerXZ = transform.position.FlatDistanceTo(playerLocation.position);
-
     }
 }
 

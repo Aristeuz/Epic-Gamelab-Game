@@ -11,16 +11,16 @@ using EZCameraShake;
 
 public class PrimeMusicManager : MonoBehaviour
 {
-
+    public static PrimeMusicManager instance;
     public string bardSong = "                "; //starting state is 16 blanks. (this can be increased or decreased depending on the amount we wish to track.
     public string currentNote = " ";
     public float musicTimer = 0;
     public float musicalInterval = 2f; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
 
 
-    private float bpm = 80f;
-    private float convertedBPM = 0f;
-    private float reactionTime = 0f;
+    public float bpm = 80f;
+    public float convertedBPM = 0f;
+    public float reactionTime = 0f;
 
     public GameObject particleA;
     public GameObject particleB;
@@ -38,6 +38,21 @@ public class PrimeMusicManager : MonoBehaviour
     public AudioSource f3;
     public AudioSource g3;
 
+    [HideInInspector]
+    public bool beat = false;
+
+    private void Awake()
+    {
+        if (!instance)
+        {
+            instance = this;
+        }
+        else
+        {
+            Debug.LogError("Second instance of prime music manager was created'(and deleted)!");
+            DestroyImmediate(this);
+        }
+    }
 
     void Start()
     {
@@ -48,7 +63,7 @@ public class PrimeMusicManager : MonoBehaviour
         reactionTime = (convertedBPM / 4);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         //A timer that constantly goes up.
             musicTimer += Time.deltaTime;
@@ -76,7 +91,7 @@ public class PrimeMusicManager : MonoBehaviour
             //________________________________________________________________________________________________________________
         
             //check if a note is played within the reaction time frame and not outside of it.
-        if ((currentNote != " ") && (musicTimer <= convertedBPM + reactionTime) && (musicTimer >= convertedBPM))
+        if ((currentNote != "_") && (musicTimer <= convertedBPM + reactionTime) && (musicTimer >= convertedBPM))
         {
             //Play said note
                 //I imagine we create a seperate void that we call here that will play the correct note according to a switch statement.
@@ -85,7 +100,8 @@ public class PrimeMusicManager : MonoBehaviour
                 bardSong += currentNote; 
                 Debug.Log("Current list = " + bardSong);
             playNotes();
-            currentNote = " ";
+            //sendSignal();
+            currentNote = "_";
             musicTimer = 0;
         }
 
@@ -97,6 +113,11 @@ public class PrimeMusicManager : MonoBehaviour
             bardSong.Remove(0, 1);
             bardSong += currentNote;
             musicTimer = reactionTime; //(we're compensating for the time we acounted for reaction time. wether to take the full reaction time or only a bit I'm not sure. playtesting req.
+        }
+
+        if (musicTimer > 0.01)
+        {
+            beat = false;
         }
     }
 
@@ -129,9 +150,9 @@ public class PrimeMusicManager : MonoBehaviour
                         currentNote = "b";
                         break;
 
-                        case " ":
+                        case "_":
                         //Debug.Log("empty note, no audio.");
-                        currentNote = " ";
+                        currentNote = "_";
                         //This is an exception case. Not sure when it would be needed.
 
                         break;
@@ -145,6 +166,8 @@ public class PrimeMusicManager : MonoBehaviour
 
     void playNotes()
     {
+        //is used for objects that have to interact with the beat. Use "if (PrimeMusicManager.instance.beat == true)" for example.
+        beat = true;
         switch (currentNote)
         {
             case "a":
@@ -190,10 +213,11 @@ public class PrimeMusicManager : MonoBehaviour
             CameraShaker.Instance.ShakeOnce(2f, 6f, 0.5f, 2f);//Camerashake for this note.
             break;
 
-            case " ":
-            //Debug.Log("empty note, no audio.");
+            case "_":
+            Debug.Log("empty note, no audio.");
             //no audio play.
             break;
+
         }
     }
 
@@ -203,5 +227,4 @@ public class PrimeMusicManager : MonoBehaviour
         //This can be called by any enemy who's checking in with the bardSong. 
         //If after 2 or more succesfull following notes there is a wrong link in the end of the string, a particle will play. this is not tracked by BrokenChain. just making a note temporarily
     }
-
 }

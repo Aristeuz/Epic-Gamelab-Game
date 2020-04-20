@@ -38,9 +38,9 @@ public class SequencePuzzle : MonoBehaviour
     //It checks it sorta correctly, but there is no reset, it's not smooth. 
     public void interact(int order, bool correctNote)
     {
-        if (timer > 0.1) //Used when two Activation ranges overlap.
+        if (timer > 0.1) //Used when two Activation ranges overlap. 
         {
-            //Debug.Log("Order " + order + " CurrentNumber " + (currentNumber + 1));
+            //Debug.Log("Order " + order + " CurrentNumber " + (currentNumber + 1) + " Correct Note " +correctNote);
             if (currentNumber + 1 == order && correctNote == true)
             {
                 Debug.Log(order + " GOOD");
@@ -50,8 +50,8 @@ public class SequencePuzzle : MonoBehaviour
             }
             else
             {
-                //Activates "deactivate()" (red lights) only when you've passed the first note.
-                if (currentNumber + 1 > 0)
+                //Activates "deactivate()" (red lights) only when you've passed the first note. (otherwise they keep bloinking)
+                if (currentNumber != -1)
                 {
                     Debug.Log(currentNumber + " WRONG");
                     foreach (SequencePuzzleObject puzzleObject in tag_targets)
@@ -72,7 +72,9 @@ public class SequencePuzzle : MonoBehaviour
             tag_targets[order].smallReset();
             //Debug.Log(currentNumber + "current number right after");
         }
-        if (currentNumber == tag_targets.Count - 1)//if all are correct
+
+        //if all pillars are correct activate whichever Event it is linked to.
+        if (currentNumber == tag_targets.Count - 1)
         {
             Debug.Log("COMPLETE!");
             if (_destroyEvent != null)
