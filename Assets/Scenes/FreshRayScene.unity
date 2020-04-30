@@ -843,7 +843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &559228230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,7 +961,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+  m_Color: {r: 0.06074225, g: 0.8584906, b: 0.2629296, a: 1}
   m_Intensity: 237.533
   m_Range: 3.003267
   m_SpotAngle: 30
@@ -1019,7 +1019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559228229}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.36, y: 2.2, z: -1.44}
+  m_LocalPosition: {x: 0.66, y: 2.85, z: -3.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1076,7 +1076,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 13.3
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1102,13 +1102,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651418371}
-  m_LocalRotation: {x: 0.3328476, y: -0.38916385, z: 0.047015496, w: 0.8576442}
-  m_LocalPosition: {x: 1.85, y: 3.24, z: -3.87}
+  m_LocalRotation: {x: 0.38065532, y: -0.080465205, z: -0.12350798, w: 0.91289246}
+  m_LocalPosition: {x: 1.99, y: 5.31, z: -7.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 37.411003, y: -53.225002, z: -12.981001}
+  m_LocalEulerAnglesHint: {x: 42.463, y: -19.063002, z: -22.875002}
 --- !u!114 &651418375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1489,8 +1489,8 @@ Material:
     - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
     - _L2_color: {r: 1, g: 0.95686275, b: 0.8392157, a: 0.99}
     - _L2_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
-    - _L3_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.19250649, g: 2.7207584, b: 0.83328575, a: 0.13342294}
+    - _L3_dir: {r: 0.6591419, g: 0.69245815, b: -0.29331493, a: 0}
     - _L4_color: {r: 0, g: 0, b: 0, a: 1}
     - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L5_color: {r: 0, g: 0, b: 0, a: 1}
@@ -2281,17 +2281,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.39968
+      value: 1.82
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.84
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.0859
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
@@ -2336,17 +2336,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 20.876461
+      value: 32.260395
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 20.874239
+      value: 32.25696
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.7720747
+      value: 8.919587
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 8946f7d6f73922546adb4c93e05c54d8,
         type: 3}
@@ -2566,7 +2566,7 @@ GameObject:
   - component: {fileID: 1751358332}
   - component: {fileID: 1751358331}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2724,8 +2724,8 @@ Material:
     - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
     - _L2_color: {r: 1, g: 0.95686275, b: 0.8392157, a: 0.99}
     - _L2_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
-    - _L3_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.2317283, g: 3.2750938, b: 1.0030617, a: 0.1606069}
+    - _L3_dir: {r: 0.61827713, g: 0.69110113, b: 0.37431613, a: 0}
     - _L4_color: {r: 0, g: 0, b: 0, a: 1}
     - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L5_color: {r: 0, g: 0, b: 0, a: 1}
