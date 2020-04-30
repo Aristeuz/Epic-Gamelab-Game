@@ -1019,7 +1019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559228229}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.03, y: 4.31, z: -2.07}
+  m_LocalPosition: {x: -1.8, y: 2.71, z: -0.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2315,8 +2315,8 @@ Material:
     - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
     - _L2_color: {r: 1, g: 0.95686275, b: 0.8392157, a: 0.99}
     - _L2_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
-    - _L3_color: {r: 0.020939525, g: 0.29594535, b: 0.09063907, a: 0.014512826}
-    - _L3_dir: {r: 0.13513942, g: 0.89855236, b: 0.4175416, a: 0}
+    - _L3_color: {r: 0.002483615, g: 0.035101764, b: 0.010750603, a: 0.01}
+    - _L3_dir: {r: -0.48743, g: 0.30905282, b: 0.8166384, a: 0}
     - _L4_color: {r: 0, g: 0, b: 0, a: 1}
     - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L5_color: {r: 0, g: 0, b: 0, a: 1}
