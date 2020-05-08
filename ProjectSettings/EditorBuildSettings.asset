@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Demo Scene.unity
     guid: 56975d78afae99e4d84f803cdb2a0676
+  - enabled: 1
+    path: Assets/Scenes/Cheyenne/Settings Display.unity
+    guid: 707e112f3a025db41a9c788b5d6bdfb1
+  - enabled: 1
+    path: Assets/Scenes/Cheyenne/Settings Controls.unity
+    guid: 5331e7f1b63ed1246b0212775fa362f5
   m_configObjects: {}

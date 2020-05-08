@@ -10,8 +10,16 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Demo Scene");
     }
 
-    public void LoadSettings (){
-        SceneManager.LoadScene("Settings");
+    public void LoadDisplaySettings (){
+       SceneManager.LoadScene("Settings Display");
+   }
+
+   public void LoadAudioSettings (){
+       SceneManager.LoadScene("Settings Audio");
+   }
+
+   public void LoadControlsSettings (){
+        SceneManager.LoadScene("Settings Controls");
     }
 
    public void ExitGame (){
@@ -22,6 +30,5 @@ public class Menu : MonoBehaviour
    public void BackToMenu (){
        SceneManager.LoadScene("Menu");
    }
-
 
 }
