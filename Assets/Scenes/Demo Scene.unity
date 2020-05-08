@@ -4434,6 +4434,7 @@ MonoBehaviour:
   triggerSolution: 
   activationRangeWidth: 1
   activationRangeHeight: 1
+  notePlayed: 0
   withShake: 1
   moveTo: {fileID: 1008878736}
   moveSpeed: 4
@@ -4443,6 +4444,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 606407902}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &252279657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252279655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e7b83311d996a4897e0b72e434ec54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDistance: 1
 --- !u!64 &252279659
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18254,7 +18268,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 12
+  near clip plane: 2
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -23940,6 +23954,7 @@ MonoBehaviour:
   triggerSolution: ab
   activationRangeWidth: 30
   activationRangeHeight: 3
+  notePlayed: 0
   withShake: 1
   moveTo: {fileID: 302647134}
   moveSpeed: 5
@@ -32280,6 +32295,7 @@ MonoBehaviour:
   triggerSolution: b
   activationRangeWidth: 4
   activationRangeHeight: 1
+  notePlayed: 0
   withShake: 0
   sequencePuzzle: {fileID: 0}
   order: 3
@@ -36002,6 +36018,7 @@ MonoBehaviour:
   triggerSolution: ab
   activationRangeWidth: 20
   activationRangeHeight: 5
+  notePlayed: 0
   withShake: 1
 --- !u!65 &1030657792
 BoxCollider:
@@ -37308,6 +37325,7 @@ MonoBehaviour:
   triggerSolution: ab
   activationRangeWidth: 30
   activationRangeHeight: 5
+  notePlayed: 0
   withShake: 1
   moveTo: {fileID: 302647134}
   moveSpeed: 5
@@ -42975,6 +42993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1171112283}
   - component: {fileID: 1171112284}
+  - component: {fileID: 1171112285}
   m_Layer: 0
   m_Name: Camera Holder
   m_TagString: Untagged
@@ -43012,6 +43031,19 @@ MonoBehaviour:
   target: {fileID: 2114698466}
   smoothSpeed: 2
   offset: {x: 0, y: 15, z: -10}
+--- !u!114 &1171112285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171112282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d33c7a2da8cd7a4a846d5cfbfa1a55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2114698466}
 --- !u!4 &1171780660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b8a55a436c9d32c4b8df4c0bc1785009,
@@ -43522,6 +43554,7 @@ MonoBehaviour:
   triggerSolution: a
   activationRangeWidth: 4
   activationRangeHeight: 1
+  notePlayed: 0
   withShake: 0
   sequencePuzzle: {fileID: 0}
   order: 2
@@ -44047,6 +44080,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1368190731003253799}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1281229035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281229033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e7b83311d996a4897e0b72e434ec54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDistance: 1
 --- !u!64 &1281229037
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53323,6 +53369,7 @@ MonoBehaviour:
   triggerSolution: 1
   activationRangeWidth: 30
   activationRangeHeight: 5
+  notePlayed: 0
   withShake: 1
   moveTo: {fileID: 1736101361}
   moveSpeed: 6
@@ -54848,6 +54895,7 @@ MonoBehaviour:
   triggerSolution: a
   activationRangeWidth: 20
   activationRangeHeight: 5
+  notePlayed: 0
   withShake: 1
 --- !u!1001 &1802734718
 PrefabInstance:
@@ -60535,6 +60583,7 @@ MonoBehaviour:
   triggerSolution: b
   activationRangeWidth: 20
   activationRangeHeight: 5
+  notePlayed: 0
   withShake: 1
   glowObject: {fileID: 1449290337825574635, guid: a20396854ead07443b2fb006e100ed42,
     type: 3}
@@ -65170,6 +65219,11 @@ PrefabInstance:
       propertyPath: note.Array.data[3]
       value: 
       objectReference: {fileID: 490164828}
+    - target: {fileID: 8105464441295360514, guid: 7bbc56d0f3dfdf8419e57adda726c20b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8105464441295360517, guid: 7bbc56d0f3dfdf8419e57adda726c20b,
         type: 3}
       propertyPath: a3
