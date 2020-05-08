@@ -18,34 +18,12 @@ public class SequencePuzzleObject : MusicInteractable
     Color color2 = Color.red;
     Color color3 = Color.blue;
 
-
-    //Eveything between ~~~~~~ is from PrimeMusicManager copypasted, could be made smoother with a connection.
-    //It is only used for the bpm time in this case.
-    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    //private float musicTimer = 0f;
-
-    //private float bpm = 80f;
-    //private float convertedBPM = 0f;
-    //private float reactionTime = 0f;
-    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    //float _convertedBPM;
-    //float _reactionTime;
-
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
         firstChild = this.gameObject.transform.GetChild(0);
         myLight = firstChild.GetComponent<Light>();
-
-        //~~~~~~~~~~~~~~~~~~~~~~~~~~
-        //convertedBPM = (1 / (bpm / 60));
-        //reactionTime = (convertedBPM / 4);
-
-        //_reactionTime = PrimeMusicManager.instance.reactionTime;
-        //_convertedBPM = PrimeMusicManager.instance.convertedBPM;
-        //~~~~~~~~~~~~~~~~~~~~~~~~~
     }
 
     // Update is called once per frame
@@ -53,10 +31,6 @@ public class SequencePuzzleObject : MusicInteractable
      protected override void Update()
     {
         base.Update();
-        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        //musicTimer += Time.deltaTime;
-        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        //_musicTimer = PrimeMusicManager.instance.musicTimer;
 
         //If any of the keys are pressed.
         if (Input.GetKeyDown(KeyCode.Alpha1) || 
@@ -66,7 +40,6 @@ public class SequencePuzzleObject : MusicInteractable
         {
             notePlayed = true;
         }
-
 
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
