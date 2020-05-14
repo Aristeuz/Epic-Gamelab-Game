@@ -18733,80 +18733,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1001 &783776238723149077
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 783776240115490002, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: playerCollider
-      value: 
-      objectReference: {fileID: 2114698465}
-    - target: {fileID: 783776240115490003, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_Name
-      value: PuzzleFeedbackLightController
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 47.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 65.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 71.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 783776240115490014, guid: 27c04a284a0c2674698a169f01a04b2a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 27c04a284a0c2674698a169f01a04b2a, type: 3}
 --- !u!1001 &1286295137493123651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18876,6 +18802,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c4b1d4f9542e54d9fdb488d7c1b8f5, type: 3}
+--- !u!1001 &2716356803482695621
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2716356802123433474, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 2114698465}
+    - target: {fileID: 2716356802123433475, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_Name
+      value: PuzzleFeedbackLightController
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 47.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 65.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 71.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716356802123433486, guid: 27c04a284a0c2674698a169f01a04b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27c04a284a0c2674698a169f01a04b2a, type: 3}
 --- !u!1001 &3327584225213277182
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Not in use at the moment could be used for the lights above doors for example
+//Doesn't do much but has to be in the child objects
 public class PuzzleFeedbackLight : MonoBehaviour
 {
     [HideInInspector]

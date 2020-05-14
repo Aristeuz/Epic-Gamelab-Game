@@ -92,10 +92,10 @@ public class PuzzleFeedbackController : MusicInteractable
 
     void restart()
     {
-        foreach(Transform child in transform)
+        foreach (Transform child in transform)
         {
             child.transform.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(1f, 0f, 0f, 1f)); // red
-        }
+        }      
         canActivate = true;
         order = 0;
         PrimeMusicManager.instance.missed = false;
