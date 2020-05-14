@@ -7,6 +7,9 @@ public class CameraWallVision : MonoBehaviour
     private GameObject Obstruction;
     public Transform player;
 
+    [Range(0, 1)]
+    public float wallTransparency = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +46,7 @@ public class CameraWallVision : MonoBehaviour
                     Obstruction.gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(1f, 1f, 1f, 1f));
                     Obstruction = hit.collider.gameObject;
                     //iTween.FadeTo(Obstruction, 0, 1); //Doesn't seem to work becasue we are using a different shader. I tween works with the Unity renderer to fade things.
-                    Obstruction.gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(0.5f, 0.5f, 0.5f, 0.5f));
+                    Obstruction.gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(wallTransparency, wallTransparency, wallTransparency, wallTransparency));
                 }
             }
             else

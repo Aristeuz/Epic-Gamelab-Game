@@ -40,6 +40,8 @@ public class PrimeMusicManager : MonoBehaviour
 
     [HideInInspector]
     public bool beat = false;
+    [HideInInspector]
+    public bool missed = false;
 
     private void Awake()
     {
@@ -113,8 +115,11 @@ public class PrimeMusicManager : MonoBehaviour
             bardSong.Remove(0, 1);
             bardSong += currentNote;
             musicTimer = reactionTime; //(we're compensating for the time we acounted for reaction time. wether to take the full reaction time or only a bit I'm not sure. playtesting req.
+
+            missed = true;//Used for missing a note on rythem for other scripts.
         }
 
+        //Is used so that objects that read "beat" each step, don't read it multiple times but only once
         if (musicTimer > 0.01)
         {
             beat = false;
@@ -168,6 +173,7 @@ public class PrimeMusicManager : MonoBehaviour
     {
         //is used for objects that have to interact with the beat. Use "if (PrimeMusicManager.instance.beat == true)" for example.
         beat = true;
+        missed = false;
         switch (currentNote)
         {
             case "a":
