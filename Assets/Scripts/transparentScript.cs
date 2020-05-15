@@ -7,6 +7,9 @@ public class transparentScript : MonoBehaviour
     private GameObject player;
     public float fadeDistance = 1;
 
+    [Range(0, 1)]
+    public float fadeIntencity = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,7 @@ public class transparentScript : MonoBehaviour
         //Makes the platform transparent if the platform's .y is higher than the player + a little extra.
         if ((player.transform.position.y + fadeDistance) < transform.position.y)
         {
-            GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(0.5f, 0.5f, 0.5f, 0.5f)); // Makes object transparent.
+            GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(fadeIntencity, fadeIntencity, fadeIntencity, fadeIntencity)); // Makes object transparent.
             gameObject.layer = 0;
         }
         else

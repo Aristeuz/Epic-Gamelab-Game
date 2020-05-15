@@ -41,8 +41,7 @@ public class SequencePuzzleObject : MusicInteractable
             notePlayed = true;
         }
 
-        float dist = Vector3.Distance(player.transform.position, transform.position);
-
+        //float dist = Vector3.Distance(player.transform.position, transform.position);
         //Debug.Log(PrimeMusicManager.instance.beat);
 
         if (PrimeMusicManager.instance.beat == true)

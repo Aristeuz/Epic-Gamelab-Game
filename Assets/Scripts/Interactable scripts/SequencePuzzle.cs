@@ -35,7 +35,6 @@ public class SequencePuzzle : MonoBehaviour
         //Debug.Log(timer);
     }
 
-    //It checks it sorta correctly, but there is no reset, it's not smooth. 
     public void interact(int order, bool correctNote)
     {
         if (timer > 0.1) //Used when two Activation ranges overlap. 
