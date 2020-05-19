@@ -42,7 +42,7 @@ Material:
     - Color_9A9462B: {r: 0, g: 0, b: 0, a: 0}
     - Color_D2A04608: {r: 1, g: 1, b: 1, a: 0}
     - Color_D840FCE7: {r: 1, g: 1, b: 1, a: 0}
-    - Color_DAB56703: {r: 0.945061, g: 1, b: 0.2216981, a: 0}
+    - Color_DAB56703: {r: 0.927139, g: 0.9811321, b: 0.21751513, a: 0}
     - _L1_color: {r: 1, g: 1, b: 1, a: 1}
     - _L1_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L2_color: {r: 0, g: 0, b: 0, a: 0}
