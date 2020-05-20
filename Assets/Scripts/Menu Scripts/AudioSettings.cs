@@ -11,20 +11,22 @@ public class AudioSettings : MonoBehaviour
     FMOD.Studio.Bus SFX;
     FMOD.Studio.Bus Voice;
     FMOD.Studio.Bus Enviroment;
-    float MusicVolume = 0.5f;
-    float SFXVolume = 0.5f;
-    float VoiceVolume = 0.5f;
-    float EnviromentVolume = 0.5f;
+    float MusicVolume = 1f;
+    float SFXVolume = 1f;
+    float VoiceVolume = 1f;
+    float EnviromentVolume = 1f;
 
 
     // Start is called before the first frame update
     void Awake()
     {
+        //Link classes to the busses
         Music = FMODUnity.RuntimeManager.GetBus("bus:/Master/Music");
-        SFX = FMODUnity.RuntimeManager.GetBus("bus:/Master/SFX)");
+        SFX = FMODUnity.RuntimeManager.GetBus("bus:/Master/SFX");
         Voice = FMODUnity.RuntimeManager.GetBus("bus:/Master/Voice");
         Enviroment = FMODUnity.RuntimeManager.GetBus("bus:/Master/Enviroment");
         SFXVolumeTestEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SFXtest");
+
     }
 
     // Update is called once per frame
@@ -45,6 +47,14 @@ public class AudioSettings : MonoBehaviour
     public void SFXVolumeLevel(float newSFXVolume)
     {
         SFXVolume = newSFXVolume;
+
+        //Play the SFXtest sound whenever you change the sfx. So the player has a reference. And also it doesn't spam
+        FMOD.Studio.PLAYBACK_STATE PlaybackState;
+        SFXVolumeTestEvent.getPlaybackState(out PlaybackState);
+        if (PlaybackState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            SFXVolumeTestEvent.start();
+        }
     }
 
     public void VoiceVolumeLevel(float newVoiceVolume)
