@@ -40,6 +40,10 @@ public class PuzzleFeedbackController : MusicInteractable
 
         //If any of the keys are pressed.
         if (Input.GetKeyDown(KeyCode.Alpha1) ||
+            Input.GetButtonDown("A Button") ||
+            Input.GetButtonDown("B Button") ||
+            Input.GetButtonDown("X Button") ||
+            Input.GetButtonDown("Y Button") ||
            Input.GetKeyDown(KeyCode.Alpha2) ||
            Input.GetKeyDown(KeyCode.Alpha3) ||
            Input.GetKeyDown(KeyCode.Alpha4))

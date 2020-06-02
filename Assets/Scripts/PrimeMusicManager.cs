@@ -67,8 +67,12 @@ public class PrimeMusicManager : MonoBehaviour
 
     void Update()
     {
+        bool aButton = Input.GetButton("A Button");
+        bool bButton = Input.GetButton("B Button");
+        bool xButton = Input.GetButton("X Button");
+        bool yButton = Input.GetButton("Y Button");
         //A timer that constantly goes up.
-            musicTimer += Time.deltaTime;
+        musicTimer += Time.deltaTime;
         //__________________________________________________________________________________________________________________
         //This first check is if we allow the player to play music too quick and then have it possibly go too fast.
         //This can be turned into an 8th beat by setting up a second string list that records these too quick beats and thus wont disturb the first list.

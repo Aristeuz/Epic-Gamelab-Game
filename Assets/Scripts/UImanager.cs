@@ -32,23 +32,27 @@ public class UImanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool aButton = Input.GetButtonDown("A Button");
+        bool bButton = Input.GetButtonDown("B Button");
+        bool xButton = Input.GetButtonDown("X Button");
+        bool yButton = Input.GetButtonDown("Y Button");
         //Clicking on the buttons with the mouse doesn't play sounds for some reason.
-        if (Input.GetKeyDown(action1))
+        if (Input.GetKeyDown(action1) || aButton)
         {
             ActionButtonOnClick(0);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("a");
         }
-        if (Input.GetKeyDown(action2) && unlockOne == true)
+        if(Input.GetKeyDown(action2) || bButton && unlockOne == true)
         {
             ActionButtonOnClick(1);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("b");
         }
-        if (Input.GetKeyDown(action3) && unlockTwo == true)
+        if (Input.GetKeyDown(action3) || xButton && unlockTwo == true)
         {
             ActionButtonOnClick(2);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("c");
         }
-        if (Input.GetKeyDown(action4) && unlockTwo == true)
+        if (Input.GetKeyDown(action4) || yButton && unlockTwo == true)
         {
             ActionButtonOnClick(3);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("d");
