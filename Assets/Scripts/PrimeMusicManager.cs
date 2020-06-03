@@ -17,7 +17,6 @@ public class PrimeMusicManager : MonoBehaviour
     public float musicTimer = 0;
     public float musicalInterval = 2f; //this would also be how long a note lasts. This would not support phrases yet. since we havent build a system for doing those yet. maybe they disable the other system for a while? a state machine?
 
-
     public float bpm = 80f;
     public float convertedBPM = 0f;
     public float reactionTime = 0f;
@@ -42,6 +41,12 @@ public class PrimeMusicManager : MonoBehaviour
     public bool beat = false;
     [HideInInspector]
     public bool missed = false;
+
+    [HideInInspector]
+    public float vibeMeter = 0f;
+    private float vibeTimer = 0f;
+    private float vibeTimeLimit = 4f;
+
 
     private void Awake()
     {
@@ -73,11 +78,12 @@ public class PrimeMusicManager : MonoBehaviour
         bool yButton = Input.GetButton("Y Button");
         //A timer that constantly goes up.
         musicTimer += Time.deltaTime;
+
         //__________________________________________________________________________________________________________________
         //This first check is if we allow the player to play music too quick and then have it possibly go too fast.
         //This can be turned into an 8th beat by setting up a second string list that records these too quick beats and thus wont disturb the first list.
         //we check essentially if the player is playing too fast and thus goes off beat. (this does not currently support 8th notes, and likely never will. but could if needed)
- 
+
         /*
         if (musicTimer < musicalInterval)
             {
@@ -94,8 +100,26 @@ public class PrimeMusicManager : MonoBehaviour
             }
         }
         */
-            //________________________________________________________________________________________________________________
-        
+        //________________________________________________________________________________________________________________
+
+        //The vibe meter keeps track of how many notes have been played, it slowly dwindels down.
+        //It dwindels down faster if the vibe meter is higher.
+        vibeTimer += Time.deltaTime;
+        if (vibeTimer > vibeTimeLimit)
+        {
+            if (vibeMeter > 0 && vibeMeter < 10)
+            {
+                vibeMeter -= 1;
+                vibeTimer = 0;
+            }
+            if (vibeMeter > 10)
+            {
+                vibeMeter -= 3;
+                vibeTimer = 0;
+            }
+        }
+
+
             //check if a note is played within the reaction time frame and not outside of it.
         if ((currentNote != "_") && (musicTimer <= convertedBPM + reactionTime) && (musicTimer >= convertedBPM))
         {
@@ -183,24 +207,32 @@ public class PrimeMusicManager : MonoBehaviour
             case "a":
             //Debug.Log("Play audio A note.");
             a3.Play();
+            vibeMeter += 1;
+            vibeTimer = 0;
             Instantiate(particleA, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "b":
             //Debug.Log("Play audio B note.");
             b3.Play();
+            vibeMeter += 1;
+            vibeTimer = 0;
             Instantiate(particleB, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "c":
             //Debug.Log("Play audio C note.");
             c3.Play();
+            vibeMeter += 1;
+            vibeTimer = 0;
             Instantiate(particleC, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
             case "d":
             //Debug.Log("Play audio D note.");
             d3.Play();
+            vibeMeter += 1;
+            vibeTimer = 0;
             Instantiate(particleD, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             break;
 
@@ -219,6 +251,8 @@ public class PrimeMusicManager : MonoBehaviour
             case "1":
             //Debug.Log("Play audio tutorial bell note.");
             g3.Play();
+            vibeMeter += 1;
+            vibeTimer = 0;
             Instantiate(particleA, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
             CameraShaker.Instance.ShakeOnce(2f, 6f, 0.5f, 2f);//Camerashake for this note.
             break;
