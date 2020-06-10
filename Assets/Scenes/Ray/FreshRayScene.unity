@@ -148,13 +148,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6548832}
-  m_LocalRotation: {x: -0.29611388, y: 0.14329469, z: 0.6027765, w: -0.72694135}
+  m_LocalRotation: {x: -0.32989094, y: 0.09027342, z: 0.64352787, w: -0.68475884}
   m_LocalPosition: {x: 0.00398, y: 0.00287, z: -0.00455}
   m_LocalScale: {x: 0.000174305, y: 0.009999998, z: 0.001080738}
   m_Children: []
   m_Father: {fileID: 6881728619105670680}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -73.941, y: 0, z: 16.667002}
+  m_LocalEulerAnglesHint: {x: 19.609001, y: -35.589, z: -92.79401}
 --- !u!183 &6548834
 Cloth:
   m_ObjectHideFlags: 0
@@ -167,8 +167,8 @@ Cloth:
   m_BendingStiffness: 0
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0
-  m_ExternalAcceleration: {x: -3.41, y: 7.5, z: 2}
+  m_Damping: 0.1
+  m_ExternalAcceleration: {x: -3.41, y: 5, z: 2}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
   m_WorldAccelerationScale: 1
@@ -484,7 +484,7 @@ SkinnedMeshRenderer:
   m_RootBone: {fileID: 0}
   m_AABB:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.087152526, y: 0.00000002097945, z: 0.540369}
+    m_Extent: {x: 0.08715251, y: 0.00000033411197, z: 0.5403689}
   m_DirtyAABB: 0
 --- !u!64 &6548836
 MeshCollider:
@@ -611,7 +611,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1933457013}
+      objectReference: {fileID: 1013715068}
     - target: {fileID: -927199367670048503, guid: 32dec405f48ff044b872922795b738e4,
         type: 3}
       propertyPath: m_Name
@@ -1103,13 +1103,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297556123}
-  m_LocalRotation: {x: -0.28851172, y: -0.20679536, z: -0.45736465, w: -0.81536144}
+  m_LocalRotation: {x: -0.31256112, y: -0.15983471, z: -0.56725055, w: -0.74497336}
   m_LocalPosition: {x: -0.00542, y: 0.00416, z: -0.00613}
   m_LocalScale: {x: 0.00017430498, y: 0.009999998, z: 0.0015950549}
   m_Children: []
   m_Father: {fileID: 9211169275592671292}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -71.303, y: -6.0410004, z: -31.519001}
+  m_LocalEulerAnglesHint: {x: 16.521, y: 38.190002, z: 80.328}
 --- !u!183 &297556125
 Cloth:
   m_ObjectHideFlags: 0
@@ -1122,8 +1122,8 @@ Cloth:
   m_BendingStiffness: 0
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0
-  m_ExternalAcceleration: {x: -3.41, y: 7.5, z: 2}
+  m_Damping: 0.1
+  m_ExternalAcceleration: {x: -3.41, y: 5, z: 2}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
   m_WorldAccelerationScale: 1
@@ -1439,7 +1439,7 @@ SkinnedMeshRenderer:
   m_RootBone: {fileID: 0}
   m_AABB:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.087152556, y: 0.0000004773028, z: 0.7975276}
+    m_Extent: {x: 0.08715257, y: 0.00000057742, z: 0.7975275}
   m_DirtyAABB: 0
 --- !u!64 &297556127
 MeshCollider:
@@ -2864,6 +2864,61 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!21 &751254369
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Toon_Red
+  m_Shader: {fileID: -6465566751694194690, guid: a3443ba6fa3e5c846b5b9a0e2b2694d6,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_97C8EC94:
+        m_Texture: {fileID: 2800000, guid: 4a2c1ad59e0a2534e8f83b81af26570b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DB342F0C:
+        m_Texture: {fileID: 2800000, guid: 63d459e0cfe682d48ae5d676e99c2d7d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1DEF9DF4: 11.69
+    - Vector1_3C3B6420: 1
+    - Vector1_9605CCA4: 10
+    - Vector1_967EC75F: 5
+    - Vector1_EE0BB5E: 0.3
+    m_Colors:
+    - Color_6A162E48: {r: 0.5849056, g: 0.1738163, b: 0.20956318, a: 0}
+    - Color_6C9C775A: {r: 1, g: 1, b: 1, a: 0}
+    - Color_9A9462B: {r: 0, g: 0, b: 0, a: 0}
+    - Color_D2A04608: {r: 1, g: 1, b: 1, a: 0}
+    - Color_D840FCE7: {r: 1, g: 1, b: 1, a: 0}
+    - Color_DAB56703: {r: 0.98095065, g: 1, b: 0.7028302, a: 0}
+    - _L1_color: {r: 1.5, g: 1.5, b: 1.5, a: 0.99}
+    - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
+    - _L2_color: {r: 1, g: 0.95686275, b: 0.8392157, a: 0.99}
+    - _L2_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
+    - _L3_color: {r: 0.3511707, g: 4.963213, b: 1.5200814, a: 0.24339038}
+    - _L3_dir: {r: -0.89641744, g: 0.26940733, b: 0.35193104, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
 --- !u!1 &766386461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,14 +3278,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!21 &1035591975
+--- !u!21 &1013715068
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Toon_base
+  m_Name: Instance of Toon_Brown
   m_Shader: {fileID: -6465566751694194690, guid: a3443ba6fa3e5c846b5b9a0e2b2694d6,
     type: 3}
   m_ShaderKeywords: 
@@ -3250,28 +3305,28 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_DB342F0C:
-        m_Texture: {fileID: 2800000, guid: a100b3cea8770804e9aec2b326a51514, type: 3}
+        m_Texture: {fileID: 2800000, guid: 63d459e0cfe682d48ae5d676e99c2d7d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1DEF9DF4: 20
-    - Vector1_3C3B6420: -1
+    - Vector1_1DEF9DF4: 11
+    - Vector1_3C3B6420: 1
     - Vector1_9605CCA4: 10
     - Vector1_967EC75F: 3
     - Vector1_EE0BB5E: 0.5
     m_Colors:
-    - Color_6A162E48: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
+    - Color_6A162E48: {r: 0.5283019, g: 0.29346353, b: 0.18191527, a: 0}
     - Color_6C9C775A: {r: 1, g: 1, b: 1, a: 0}
     - Color_9A9462B: {r: 0, g: 0, b: 0, a: 0}
     - Color_D2A04608: {r: 1, g: 1, b: 1, a: 0}
     - Color_D840FCE7: {r: 1, g: 1, b: 1, a: 0}
-    - Color_DAB56703: {r: 0.1509434, g: 0.05482378, b: 0.11634037, a: 0}
+    - Color_DAB56703: {r: 0.8301887, g: 0.6096046, b: 0.5286579, a: 0}
     - _L1_color: {r: 1.5, g: 1.5, b: 1.5, a: 0.99}
     - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
     - _L2_color: {r: 1, g: 0.95686275, b: 0.8392157, a: 0.99}
     - _L2_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
-    - _L3_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.18663989, g: 2.637844, b: 0.80789155, a: 0.1293569}
+    - _L3_dir: {r: 0.85956675, g: 0.51072913, b: -0.017345523, a: 0}
     - _L4_color: {r: 0, g: 0, b: 0, a: 1}
     - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L5_color: {r: 0, g: 0, b: 0, a: 1}
@@ -4443,61 +4498,6 @@ Transform:
   m_Father: {fileID: 439127881}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1389995981
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Toon_Red
-  m_Shader: {fileID: -6465566751694194690, guid: a3443ba6fa3e5c846b5b9a0e2b2694d6,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap:
-    MotionVector: User
-  disabledShaderPasses:
-  - MOTIONVECTORS
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_97C8EC94:
-        m_Texture: {fileID: 2800000, guid: 4a2c1ad59e0a2534e8f83b81af26570b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_DB342F0C:
-        m_Texture: {fileID: 2800000, guid: 63d459e0cfe682d48ae5d676e99c2d7d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - Vector1_1DEF9DF4: 11.69
-    - Vector1_3C3B6420: 1
-    - Vector1_9605CCA4: 10
-    - Vector1_967EC75F: 5
-    - Vector1_EE0BB5E: 0.3
-    m_Colors:
-    - Color_6A162E48: {r: 0.5849056, g: 0.1738163, b: 0.20956318, a: 0}
-    - Color_6C9C775A: {r: 1, g: 1, b: 1, a: 0}
-    - Color_9A9462B: {r: 0, g: 0, b: 0, a: 0}
-    - Color_D2A04608: {r: 1, g: 1, b: 1, a: 0}
-    - Color_D840FCE7: {r: 1, g: 1, b: 1, a: 0}
-    - Color_DAB56703: {r: 0.98095065, g: 1, b: 0.7028302, a: 0}
-    - _L1_color: {r: 1.5, g: 1.5, b: 1.5, a: 0.99}
-    - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
-    - _L2_color: {r: 1, g: 0.95686275, b: 0.8392157, a: 0.99}
-    - _L2_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
-    - _L3_color: {r: 0.3511707, g: 4.963213, b: 1.5200814, a: 0.24339038}
-    - _L3_dir: {r: -0.89641744, g: 0.26940733, b: 0.35193104, a: 0}
-    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
 --- !u!21 &1411003667
 Material:
   serializedVersion: 6
@@ -5457,7 +5457,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1389995981}
+  - {fileID: 751254369}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6073,14 +6073,30 @@ Material:
     - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L6_color: {r: 0, g: 0, b: 0, a: 1}
     - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
---- !u!21 &1933457013
+--- !u!1 &1934134944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1238486413}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238486414}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!21 &1962553497
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Toon_Brown
+  m_Name: Instance of Toon_base
   m_Shader: {fileID: -6465566751694194690, guid: a3443ba6fa3e5c846b5b9a0e2b2694d6,
     type: 3}
   m_ShaderKeywords: 
@@ -6100,50 +6116,34 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_DB342F0C:
-        m_Texture: {fileID: 2800000, guid: 63d459e0cfe682d48ae5d676e99c2d7d, type: 3}
+        m_Texture: {fileID: 2800000, guid: a100b3cea8770804e9aec2b326a51514, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1DEF9DF4: 11
-    - Vector1_3C3B6420: 1
+    - Vector1_1DEF9DF4: 20
+    - Vector1_3C3B6420: -1
     - Vector1_9605CCA4: 10
     - Vector1_967EC75F: 3
     - Vector1_EE0BB5E: 0.5
     m_Colors:
-    - Color_6A162E48: {r: 0.5283019, g: 0.29346353, b: 0.18191527, a: 0}
+    - Color_6A162E48: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
     - Color_6C9C775A: {r: 1, g: 1, b: 1, a: 0}
     - Color_9A9462B: {r: 0, g: 0, b: 0, a: 0}
     - Color_D2A04608: {r: 1, g: 1, b: 1, a: 0}
     - Color_D840FCE7: {r: 1, g: 1, b: 1, a: 0}
-    - Color_DAB56703: {r: 0.8301887, g: 0.6096046, b: 0.5286579, a: 0}
+    - Color_DAB56703: {r: 0.1509434, g: 0.05482378, b: 0.11634037, a: 0}
     - _L1_color: {r: 1.5, g: 1.5, b: 1.5, a: 0.99}
     - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
     - _L2_color: {r: 1, g: 0.95686275, b: 0.8392157, a: 0.99}
     - _L2_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
-    - _L3_color: {r: 0.18663989, g: 2.637844, b: 0.80789155, a: 0.1293569}
-    - _L3_dir: {r: 0.85956675, g: 0.51072913, b: -0.017345523, a: 0}
+    - _L3_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L4_color: {r: 0, g: 0, b: 0, a: 1}
     - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L5_color: {r: 0, g: 0, b: 0, a: 1}
     - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L6_color: {r: 0, g: 0, b: 0, a: 1}
     - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
---- !u!1 &1934134944
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1238486413}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1238486414}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &1973612070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7147,7 +7147,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1035591975}
+  - {fileID: 1962553497}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7608,6 +7608,7 @@ GameObject:
   - component: {fileID: 2409729363823711572}
   - component: {fileID: 1669232159591540553}
   - component: {fileID: 1669232159591540552}
+  - component: {fileID: 1669232159591540554}
   m_Layer: 0
   m_Name: CharacterCreation
   m_TagString: Untagged
@@ -7641,6 +7642,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6392595, y: 1.5493629, z: 0.546216}
   m_Center: {x: 0, y: 1.2659785, z: -0.009244919}
+--- !u!95 &1669232159591540554
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669232159591540551}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f688d848ec31234ebc1fdb6b72396a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1832976613553791526
 GameObject:
   m_ObjectHideFlags: 0
@@ -7818,9 +7838,9 @@ Cloth:
   m_BendingStiffness: 0.8
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0.5
-  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
+  m_Damping: 0.3
+  m_ExternalAcceleration: {x: 0, y: 0, z: -7}
+  m_RandomAcceleration: {x: 20, y: 0, z: 0}
   m_WorldVelocityScale: 1
   m_WorldAccelerationScale: 1
   m_Friction: 0.5
@@ -9165,9 +9185,9 @@ Cloth:
   m_BendingStiffness: 0.8
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0.5
-  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
-  m_RandomAcceleration: {x: 0, y: 0, z: 0}
+  m_Damping: 0.3
+  m_ExternalAcceleration: {x: 0, y: 0, z: 7}
+  m_RandomAcceleration: {x: -20, y: 0, z: 0}
   m_WorldVelocityScale: 1
   m_WorldAccelerationScale: 1
   m_Friction: 0.5
@@ -10281,14 +10301,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6486750180767119106}
-  m_LocalRotation: {x: 0.940098, y: 0.00000004113214, z: -0.00000011224732, w: 0.3409044}
+  m_LocalRotation: {x: 0.9424001, y: 0.00000004036843, z: -0.000000112518386, w: 0.3344878}
   m_LocalPosition: {x: 0.00098, y: 0.00015434615, z: 0.0004001128}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.9999995}
   m_Children:
   - {fileID: 2370007690533197597}
   m_Father: {fileID: 3708984297724982233}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 140.91699, y: -0.000015258789, z: 0}
 --- !u!1 &6764955342398509335
 GameObject:
   m_ObjectHideFlags: 0
@@ -11323,14 +11343,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866286775656154891}
-  m_LocalRotation: {x: 0.940098, y: 0.00000004113214, z: -0.00000011224732, w: 0.3409044}
+  m_LocalRotation: {x: 0.9424001, y: 0.00000004036843, z: -0.000000112518386, w: 0.3344878}
   m_LocalPosition: {x: -0.0009799999, y: 0.00015434615, z: 0.00040011323}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.9999995}
   m_Children:
   - {fileID: 207315842868914907}
   m_Father: {fileID: 3708984297724982233}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 140.91699, y: -0.000015258789, z: 0}
 --- !u!4 &8338660048852849656
 Transform:
   m_ObjectHideFlags: 0
@@ -11393,7 +11413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4073905793511636024}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.059049997, z: 0}
+  m_LocalPosition: {x: 0, y: 0.059049997, z: 0.122}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 3708984297724982233}
