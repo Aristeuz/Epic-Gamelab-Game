@@ -13,9 +13,9 @@ public class UImanager : MonoBehaviour
     private KeyCode action1, action2, action3, action4;
     public GameObject primeMusic;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool unlockOne = false;
-    [HideInInspector]
+    //[HideInInspector]
     public bool unlockTwo = false;
 
     void Start()
@@ -42,17 +42,17 @@ public class UImanager : MonoBehaviour
             ActionButtonOnClick(0);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("a");
         }
-        if(Input.GetKeyDown(action2) || bButton && unlockOne == true)
+        if(Input.GetKeyDown(action2) && unlockOne == true || bButton && unlockOne == true)
         {
             ActionButtonOnClick(1);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("b");
         }
-        if (Input.GetKeyDown(action3) || xButton && unlockTwo == true)
+        if (Input.GetKeyDown(action3) && unlockTwo == true || xButton && unlockTwo == true)
         {
             ActionButtonOnClick(2);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("c");
         }
-        if (Input.GetKeyDown(action4) || yButton && unlockTwo == true)
+        if (Input.GetKeyDown(action4) && unlockTwo == true || yButton && unlockTwo == true)
         {
             ActionButtonOnClick(3);
             primeMusic.GetComponent<PrimeMusicManager>().currentNote = ("d");
