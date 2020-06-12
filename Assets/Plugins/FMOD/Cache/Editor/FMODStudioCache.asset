@@ -521,6 +521,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3449078751742348557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MusicTest
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MusicTest
+  guid: 90e7a97e93e97949a4e0b05ccb5d7db4
+  Banks:
+  - {fileID: 8088097786980249935}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 232333
 --- !u!114 &-3352788279468467206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -559,6 +582,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2825467722659395566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice/VoiceTest
+  m_EditorClassIdentifier: 
+  Path: event:/Voice/VoiceTest
+  guid: 53ce2cb31f92924babb2b6a23e58ac63
+  Banks:
+  - {fileID: 8088097786980249935}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10657
 --- !u!114 &-2744135673053363285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +711,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 679
+--- !u!114 &-1913010777010133567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXtest2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXtest2
+  guid: 6f7723032b33b0498e5c31d917e586e4
+  Banks:
+  - {fileID: 8088097786980249935}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &-1680384914479536264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,16 +924,20 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6837727855473784535}
-  - {fileID: 4348517378498521686}
+  - {fileID: 1264651980551986589}
+  - {fileID: 8088097786980249935}
   EditorEvents:
-  - {fileID: -7774697875301085240}
+  - {fileID: 3864229655474659287}
+  - {fileID: -2825467722659395566}
+  - {fileID: -1913010777010133567}
+  - {fileID: -3449078751742348557}
+  - {fileID: 6840423827373250495}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4348517378498521686}
+  - {fileID: 8088097786980249935}
   StringsBanks:
-  - {fileID: 6837727855473784535}
-  stringsBankWriteTime: 637198685282824742
+  - {fileID: 1264651980551986589}
+  stringsBankWriteTime: 637275816515295737
   cacheVersion: 3
 --- !u!114 &2964450081770356
 MonoBehaviour:
@@ -965,6 +1038,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 232333
+--- !u!114 &1264651980551986589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMODfile/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637275816515295737
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1148
+  Exists: 1
 --- !u!114 &1535766329511754037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,6 +1247,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3864229655474659287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/EnviromentTest
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/EnviromentTest
+  guid: 00f2c5a977c0ff4f8398e421ad9a7fa3
+  Banks:
+  - {fileID: 8088097786980249935}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 130000
 --- !u!114 &3912318283793171589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1531,6 +1647,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 736
   Exists: 1
+--- !u!114 &6840423827373250495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXtest
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXtest
+  guid: dc8e75352d03fc4cbca84c103d901e78
+  Banks:
+  - {fileID: 8088097786980249935}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 679
 --- !u!114 &6850561234406998731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,6 +1787,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8088097786980249935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODfile/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637275816515276046
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &8311665870161089687
 MonoBehaviour:
   m_ObjectHideFlags: 0

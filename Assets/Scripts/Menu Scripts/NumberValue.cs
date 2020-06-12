@@ -8,13 +8,15 @@ public class NumberValue : MonoBehaviour
 {
     TextMeshProUGUI valueText;
 
-    void Start()
+    void Awake()
     {
+        //Debug.Log("Change Text Start");
         valueText = GetComponent<TextMeshProUGUI>();
     }
 
-    public void updateText (float value)
+    public void updateText(float value)
     {
+        //Debug.Log("Change Text");
         valueText.text = Mathf.RoundToInt(value * 100) + "%";
     }
 }

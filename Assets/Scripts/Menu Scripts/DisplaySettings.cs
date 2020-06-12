@@ -14,23 +14,21 @@ public class DisplaySettings : MonoBehaviour
     TextMeshProUGUI windowModeText;
     public bool fullScreen = true;
 
+    //public GameObject HUD;
+    //public bool enableHUD;
 
     // Start is called before the first frame update
     void Start()
     {
         resolutionText = resolution.GetComponent<TextMeshProUGUI>();
         windowModeText = windowMode.GetComponent<TextMeshProUGUI>();
+        LoadSettings();
     }
 
     //Changes the fullscreen to windowed and vise versa
     public void changeFullscreen()
     {
         fullScreen = !fullScreen;
-
-        if (fullScreen == true)
-        windowModeText.text = "Fullscreen";
-        if (fullScreen == false)
-        windowModeText.text = "Windowed";
 
         SetScreenRes();
     }
@@ -40,13 +38,19 @@ public class DisplaySettings : MonoBehaviour
 
     }
 
+    public void enableHUD()
+    {
+
+        //SettingsManager.instance._HUD = HUD;
+    }
+
     //make the number on the list go down
     public void ScreenResDown()
     {
         if (resNumber < 3)
         {
-        resNumber += 1;
-        SetScreenRes();
+            resNumber += 1;
+            SetScreenRes();
         }
     }
 
@@ -63,10 +67,16 @@ public class DisplaySettings : MonoBehaviour
     //Changes the resolution
     void SetScreenRes()
     {
+        //change name here since the changeFullscreen() goes to this function anyway.
+        if (fullScreen == true)
+            windowModeText.text = "Fullscreen";
+        if (fullScreen == false)
+            windowModeText.text = "Windowed";
+
         switch (resNumber)
         {
             case 0f:
-                Screen.SetResolution(1920,1080, fullScreen);
+                Screen.SetResolution(1920, 1080, fullScreen);
                 resolutionText.text = "1920 x 1080";
                 break;
             case 1f:
@@ -82,5 +92,20 @@ public class DisplaySettings : MonoBehaviour
                 resolutionText.text = "1280 x 800";
                 break;
         }
+        SettingsManager.instance._screenResolution = resNumber;
+        SettingsManager.instance._fullScreen = fullScreen;
+    }
+
+    void LoadSettings()
+    {
+        //Debug.Log(SettingsManager.instance);
+        //Load the value from settingsmanager back into this local mananager.
+        fullScreen = SettingsManager.instance._fullScreen;
+        resNumber = SettingsManager.instance._screenResolution;
+        //HUD = ettingsManager.instance._HUD;
+
+        //Set the value of the slider to be the current value.
+        SetScreenRes();
+
     }
 }

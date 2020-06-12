@@ -583,6 +583,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9bc59104931ed4d8a188866f3dc4af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayCanvas: {fileID: 0}
+  audioCanvas: {fileID: 0}
+  controlsCanvas: {fileID: 0}
 --- !u!1 &562941321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,7 +1139,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 404405166}
-        m_MethodName: LoadAudioSettings
+        m_MethodName: LoadSettingsMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

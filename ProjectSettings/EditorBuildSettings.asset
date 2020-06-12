@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cheyenne/Settings Controls.unity
     guid: 5331e7f1b63ed1246b0212775fa362f5
+  - enabled: 1
+    path: Assets/Scenes/Jorn/Settings Menu.unity
+    guid: b20a5c4a3901cc244852377ffaba28a6
   m_configObjects: {}
