@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     //public Transform relativeTransform;
     float moveHL, moveVL = 0;
 
+    public Animator animator;
+    [HideInInspector]
+    public bool walking = false;
+
     //private Rigidbody rb;
     private CharacterController CC;
 
@@ -23,19 +27,30 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        animator.SetBool("walking", walking);
         //Horizontal and vertical movement
         moveHL = Input.GetAxis("Horizontal") * movementSpeed * Time.deltaTime;
         moveVL = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
 
-        //Look direction
-        direction = new Vector3(moveHL, 0f, -moveVL);
+        //For animation
+        if (Input.GetAxis("Horizontal") > 0.1 || Input.GetAxis("Vertical") > 0.1 || Input.GetAxis("Horizontal") < -0.1 || Input.GetAxis("Vertical") < -0.1)
+        {
+            walking = true;
+        }
+        else
+        {
+            walking = false;
+        }
+
+
+            //Look direction
+            direction = new Vector3(moveHL, 0f, -moveVL);
         CC.SimpleMove(direction * movementSpeed * 6);
        
         if (direction != Vector3.zero)

@@ -17097,6 +17097,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8402560616524058396, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 782788704}
+    - target: {fileID: 8508072681152223186, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 782788704}
+    - target: {fileID: 8508072681152223187, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: KeyboardUI
+      value: 
+      objectReference: {fileID: 1498792563}
+    - target: {fileID: 8508072681152223187, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: ControllerUI
+      value: 
+      objectReference: {fileID: 345187542}
     - target: {fileID: 9167891165707372856, guid: 3203c4efb234f5442956d80d3174a5e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26475,6 +26495,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 574f3b339a6dcb44e8b1dcfafd85453e, type: 3}
+--- !u!95 &782788704 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 401896208721071166, guid: 3203c4efb234f5442956d80d3174a5e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 398956981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &783270363
 PrefabInstance:
   m_ObjectHideFlags: 0

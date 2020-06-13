@@ -7,11 +7,15 @@ public class playerControlController : MonoBehaviour
     private Component clickToMoveScript;
     private Component playerControllerScript;
 
+    public Canvas KeyboardUI;
+    public Canvas ControllerUI;
+
     // Start is called before the first frame update
     void Start()
     {
         clickToMoveScript = GetComponent<ClickToMove>();
         playerControllerScript = GetComponent<PlayerController>();
+
     }
 
     // Update is called once per frame
@@ -21,6 +25,11 @@ public class playerControlController : MonoBehaviour
         {
             playerControllerScript.GetComponent<PlayerController>().enabled = false;
             clickToMoveScript.GetComponent<ClickToMove>().enabled = true;
+            // UI
+            if (KeyboardUI)
+                KeyboardUI.gameObject.SetActive(true);
+            if (ControllerUI)
+                ControllerUI.gameObject.SetActive(false);
         }
 
         //controller input
@@ -28,6 +37,11 @@ public class playerControlController : MonoBehaviour
         {
             playerControllerScript.GetComponent<PlayerController>().enabled = true;
             clickToMoveScript.GetComponent<ClickToMove>().enabled = false;
+            // UI
+            if (KeyboardUI)
+                KeyboardUI.gameObject.SetActive(false);
+            if (ControllerUI)
+                ControllerUI.gameObject.SetActive(true);
         }
     }
 }

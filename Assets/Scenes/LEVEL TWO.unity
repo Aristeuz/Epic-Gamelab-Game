@@ -1272,6 +1272,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8402560616524058396, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 288984018}
+    - target: {fileID: 8508072681152223186, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 288984018}
+    - target: {fileID: 8508072681152223187, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: KeyboardUI
+      value: 
+      objectReference: {fileID: 984419031}
+    - target: {fileID: 8508072681152223187, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: ControllerUI
+      value: 
+      objectReference: {fileID: 2092089456}
     - target: {fileID: 9167891165707372856, guid: 3203c4efb234f5442956d80d3174a5e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1332,6 +1352,12 @@ PrefabInstance:
 --- !u!4 &288984017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9167891165707372856, guid: 3203c4efb234f5442956d80d3174a5e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 288984016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &288984018 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 401896208721071166, guid: 3203c4efb234f5442956d80d3174a5e4,
     type: 3}
   m_PrefabInstance: {fileID: 288984016}
   m_PrefabAsset: {fileID: 0}
