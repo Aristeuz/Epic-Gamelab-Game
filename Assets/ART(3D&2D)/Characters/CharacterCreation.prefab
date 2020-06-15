@@ -89,8 +89,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: -0.21700485, z: -0.09008375}
-    m_Extent: {x: 0.42940742, y: 0.23347728, z: 0.330626}
+    m_Center: {x: -0.006512761, y: -0.23305294, z: -0.16053298}
+    m_Extent: {x: 0.38750678, y: 0.24952537, z: 0.36711958}
   m_DirtyAABB: 0
 --- !u!183 &754162940627598221
 Cloth:
@@ -849,8 +849,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: -0.000000029802322, y: -0.38090977, z: 0.076994106}
-    m_Extent: {x: 0.35924512, y: 0.37054023, z: 0.22075386}
+    m_Center: {x: 0.030057728, y: -0.38325536, z: 0.050103217}
+    m_Extent: {x: 0.3007149, y: 0.37288582, z: 0.24056333}
   m_DirtyAABB: 0
 --- !u!183 &3814959813982938218
 Cloth:
@@ -1267,8 +1267,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: -0.003515875, y: -0.7373158, z: 0.029537812}
-    m_Extent: {x: 0.026517017, y: 0.723886, z: 0.09061973}
+    m_Center: {x: 0.10971126, y: -0.58529174, z: -0.34760934}
+    m_Extent: {x: 0.16210884, y: 0.571862, z: 0.4434989}
   m_DirtyAABB: 0
 --- !u!183 &3832131245871149123
 Cloth:
@@ -1282,13 +1282,13 @@ Cloth:
   m_BendingStiffness: 0.8
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0.3
+  m_Damping: 0.2
   m_ExternalAcceleration: {x: 0, y: 0, z: 7}
-  m_RandomAcceleration: {x: -20, y: 0, z: 0}
-  m_WorldVelocityScale: 1
-  m_WorldAccelerationScale: 1
+  m_RandomAcceleration: {x: 0, y: 0, z: 0}
+  m_WorldVelocityScale: 0.4
+  m_WorldAccelerationScale: 0.1
   m_Friction: 0.5
-  m_CollisionMassScale: 0
+  m_CollisionMassScale: 0.5
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1
   m_SolverFrequency: 120
@@ -2083,13 +2083,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345680918157269091}
-  m_LocalRotation: {x: -0.31256112, y: -0.15983471, z: -0.56725055, w: -0.74497336}
-  m_LocalPosition: {x: -0.00542, y: 0.00416, z: -0.00613}
+  m_LocalRotation: {x: -0.3132226, y: -0.15750298, z: -0.5671677, w: -0.7452552}
+  m_LocalPosition: {x: -0.005418207, y: 0.004158283, z: -0.006124853}
   m_LocalScale: {x: 0.00017430498, y: 0.009999998, z: 0.0015950549}
   m_Children: []
   m_Father: {fileID: 1884119034067992772}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 16.521, y: 38.190002, z: 80.328}
+  m_LocalEulerAnglesHint: {x: 16.75, y: 38.04, z: 80.356}
 --- !u!33 &7345680918157269080
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2160,8 +2160,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.08715257, y: 0.00000057742, z: 0.7975275}
+    m_Center: {x: -0.13303426, y: -0.6323471, z: 0.89461}
+    m_Extent: {x: 0.22018671, y: 0.7260922, z: 0.17721397}
   m_DirtyAABB: 0
 --- !u!183 &7345680918157269093
 Cloth:
@@ -2178,9 +2178,9 @@ Cloth:
   m_Damping: 0.1
   m_ExternalAcceleration: {x: -3.41, y: 5, z: 2}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
+  m_WorldVelocityScale: 0
+  m_WorldAccelerationScale: 0.1
+  m_Friction: 0.6
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1
@@ -2470,13 +2470,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345680918457003416}
-  m_LocalRotation: {x: -0.32989094, y: 0.09027342, z: 0.64352787, w: -0.68475884}
-  m_LocalPosition: {x: 0.00398, y: 0.00287, z: -0.00455}
+  m_LocalRotation: {x: -0.32759693, y: 0.09017093, z: 0.6439607, w: -0.68546635}
+  m_LocalPosition: {x: 0.0039883223, y: 0.0028780818, z: -0.0045486586}
   m_LocalScale: {x: 0.000174305, y: 0.009999998, z: 0.001080738}
   m_Children: []
   m_Father: {fileID: 4211382797999511264}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 19.609001, y: -35.589, z: -92.79401}
+  m_LocalEulerAnglesHint: {x: 19.45, y: -35.349003, z: -92.675}
 --- !u!33 &7345680918457003421
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2547,8 +2547,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.08715251, y: 0.00000033411197, z: 0.5403689}
+    m_Center: {x: 0.27425718, y: -0.29481623, z: 0.36863136}
+    m_Extent: {x: 0.36140966, y: 0.29481623, z: 0.27719575}
   m_DirtyAABB: 0
 --- !u!183 &7345680918457003418
 Cloth:
@@ -2565,9 +2565,9 @@ Cloth:
   m_Damping: 0.1
   m_ExternalAcceleration: {x: -3.41, y: 5, z: 2}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
-  m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
-  m_Friction: 0.5
+  m_WorldVelocityScale: 0
+  m_WorldAccelerationScale: 0.1
+  m_Friction: 0.6
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1
@@ -3107,7 +3107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8276301298672986047}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.625, y: 0.042, z: 6.959}
+  m_LocalPosition: {x: 8.629933, y: 0.042000055, z: 6.8999248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5523542222171853583}
@@ -3250,8 +3250,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0.0070234835, y: -0.7291056, z: 0.0044386983}
-    m_Extent: {x: 0.026517052, y: 0.7238858, z: 0.09061968}
+    m_Center: {x: 0.07162617, y: 0.3618688, z: 0.5119469}
+    m_Extent: {x: 0.15782014, y: 0.4138536, z: 0.55435705}
   m_DirtyAABB: 0
 --- !u!183 &8900717891011873942
 Cloth:
@@ -3265,13 +3265,13 @@ Cloth:
   m_BendingStiffness: 0.8
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0.3
+  m_Damping: 0.2
   m_ExternalAcceleration: {x: 0, y: 0, z: -7}
-  m_RandomAcceleration: {x: 20, y: 0, z: 0}
-  m_WorldVelocityScale: 1
-  m_WorldAccelerationScale: 1
+  m_RandomAcceleration: {x: 0, y: 0, z: 0}
+  m_WorldVelocityScale: 0.4
+  m_WorldAccelerationScale: 0.1
   m_Friction: 0.5
-  m_CollisionMassScale: 0
+  m_CollisionMassScale: 0.5
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1
   m_SolverFrequency: 120
