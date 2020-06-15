@@ -6,8 +6,6 @@ public class SettingsManager : MonoBehaviour
 {
     public static SettingsManager instance;
 
-    public GameObject menu;
-    bool menuActive = true;
 
     [Header("Audio")]
     [Range(0,1)]
@@ -45,20 +43,4 @@ public class SettingsManager : MonoBehaviour
         }
             
     }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("Escape key was pressed");
-            if (menuActive == true)
-            menu.SetActive(false);
-
-            if (menuActive == false)
-            menu.SetActive(true);
-
-            menuActive = !menuActive;
-        }
-    }
-
 }
