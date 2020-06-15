@@ -15,7 +15,6 @@ public class playerControlController : MonoBehaviour
     {
         clickToMoveScript = GetComponent<ClickToMove>();
         playerControllerScript = GetComponent<PlayerController>();
-
     }
 
     // Update is called once per frame

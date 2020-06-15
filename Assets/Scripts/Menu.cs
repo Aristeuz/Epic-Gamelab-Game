@@ -12,7 +12,7 @@ public class Menu : MonoBehaviour
     //currently both resume and new game, will go to the demo scene, as there is no save game option yet
     public void StartGame()
     {
-        SceneManager.LoadScene("Demo Scene");
+        SceneManager.LoadScene("LEVEL TWO");
     }
 
     public void LoadSettingsMenu()
