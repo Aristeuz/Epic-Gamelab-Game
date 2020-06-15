@@ -27,7 +27,7 @@ MonoBehaviour:
   LoggingLevel: 2
   SpeakerModeSettings:
   - Platform: 2
-    Value: 3
+    Value: 6
   - Platform: 20
     Value: 3
   SampleRateSettings:
@@ -78,6 +78,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - Music
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
