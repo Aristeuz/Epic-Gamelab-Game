@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{7d00d8fa-d2b0-4ad9-96ce-6b0a93fff17e}">
+		<property name="assetPath">
+			<value>Themes/Theme - Doubt/Doubt-008.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>112</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc475ded-170a-4975-ac62-c7ea4c203531}</destination>
+		</relationship>
+	</object>
+</objects>

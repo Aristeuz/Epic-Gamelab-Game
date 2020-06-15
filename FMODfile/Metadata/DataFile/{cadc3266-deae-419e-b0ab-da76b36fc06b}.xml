@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DataFile" id="{cadc3266-deae-419e-b0ab-da76b36fc06b}">
+		<property name="assetPath">
+			<value>Themes/Theme - Commons v1/Commons Layer 10 - Synth Full Score.wav.reapeaks</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc475ded-170a-4975-ac62-c7ea4c203531}</destination>
+		</relationship>
+	</object>
+</objects>

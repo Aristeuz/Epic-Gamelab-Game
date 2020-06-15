@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c279cd57-1e8e-4002-aae9-14965d60327e}">
+		<property name="assetPath">
+			<value>Themes/Theme - Immortals v1/Immortals Layer 1 - BASE LAYER.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>108</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc475ded-170a-4975-ac62-c7ea4c203531}</destination>
+		</relationship>
+	</object>
+</objects>

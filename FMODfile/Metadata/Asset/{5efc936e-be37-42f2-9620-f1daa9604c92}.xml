@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{5efc936e-be37-42f2-9620-f1daa9604c92}">
+		<property name="assetPath">
+			<value>Themes/Theme - Growth 1/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc475ded-170a-4975-ac62-c7ea4c203531}</destination>
+		</relationship>
+	</object>
+</objects>

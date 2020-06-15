@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DataFile" id="{3cd9e6ad-2ee8-4ef2-91b9-d98068f5a67d}">
+		<property name="assetPath">
+			<value>Themes/Theme - Commons v1/Commons Layer 6 - Cello Distortion.wav.reapeaks</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc475ded-170a-4975-ac62-c7ea4c203531}</destination>
+		</relationship>
+	</object>
+</objects>

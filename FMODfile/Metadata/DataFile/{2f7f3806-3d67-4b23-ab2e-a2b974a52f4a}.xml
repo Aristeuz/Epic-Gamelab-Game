@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DataFile" id="{2f7f3806-3d67-4b23-ab2e-a2b974a52f4a}">
+		<property name="assetPath">
+			<value>Themes/Theme - Commons v1/Commons Layer 4 - Synth Left.wav.reapeaks</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc475ded-170a-4975-ac62-c7ea4c203531}</destination>
+		</relationship>
+	</object>
+</objects>
