@@ -8,22 +8,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 50677690746ff5c4083b80371230aa25
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cheyenne/Settings Audio.unity
     guid: ea2db2d79b9669d41a25e0fdebd9f8a1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demo Scene.unity
     guid: 56975d78afae99e4d84f803cdb2a0676
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cheyenne/Settings Display.unity
     guid: 707e112f3a025db41a9c788b5d6bdfb1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cheyenne/Settings Controls.unity
     guid: 5331e7f1b63ed1246b0212775fa362f5
   - enabled: 1
-    path: Assets/Scenes/Jorn/Settings Menu.unity
+    path: Assets/Scenes/Settings Menu.unity
     guid: b20a5c4a3901cc244852377ffaba28a6
   - enabled: 1
     path: Assets/Scenes/LEVEL TWO.unity
     guid: 5c8ae7c7932afdf4eb9d72118e7ace76
+  - enabled: 1
+    path: Assets/Scenes/thanksScene.unity
+    guid: 2f9fdc6d0956d304e87b7ea75b642607
   m_configObjects: {}

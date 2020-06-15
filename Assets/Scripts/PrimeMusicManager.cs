@@ -107,14 +107,14 @@ public class PrimeMusicManager : MonoBehaviour
         vibeTimer += Time.deltaTime;
         if (vibeTimer > vibeTimeLimit)
         {
-            if (vibeMeter > 0 && vibeMeter < 10)
+            if (vibeMeter > 0 && vibeMeter <= 10)
             {
                 vibeMeter -= 1;
                 vibeTimer = 0;
             }
-            if (vibeMeter > 10)
+            if (vibeMeter > 13)
             {
-                vibeMeter -= 3;
+                vibeMeter -= 6;
                 vibeTimer = 0;
             }
         }

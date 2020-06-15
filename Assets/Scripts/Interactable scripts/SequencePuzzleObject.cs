@@ -89,7 +89,7 @@ public class SequencePuzzleObject : MusicInteractable
     //Activated and correct
     public void activated()
     {
-        myLight.intensity = 50;
+        myLight.intensity = 100;
         myLight.color = color1;
         activatedBool = true;
     }
