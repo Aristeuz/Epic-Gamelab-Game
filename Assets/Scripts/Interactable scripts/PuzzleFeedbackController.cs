@@ -16,6 +16,11 @@ public class PuzzleFeedbackController : MusicInteractable
     public activateAndGlowEvent _activateAndGlowEvent;
     public moveEvent _moveEvent;
 
+    [Header("Materials")]
+    public Material Inactive;
+    public Material Active;
+    public Material Complete;
+
     public List<PuzzleFeedbackLight> tag_targets = new List<PuzzleFeedbackLight>();
 
     // Start is called before the first frame update
@@ -70,7 +75,8 @@ public class PuzzleFeedbackController : MusicInteractable
                     distanceToPlayerXZ <= activationRangeWidth && //Checking width
                     Mathf.Abs((playerLocation.position - transform.position).y) <= activationRangeHeight) //Checking height)
                     {
-                        tag_targets[order].gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(0f, 0f, 1f, 1f)); // blue
+                        //tag_targets[order].gameObject.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(0f, 0f, 1f, 1f)); // blue
+                        tag_targets[order].gameObject.GetComponent<MeshRenderer>().material = Active; // blue
                         order += 1;
 
                         //if everything is correct
@@ -98,7 +104,8 @@ public class PuzzleFeedbackController : MusicInteractable
     {
         foreach (Transform child in transform)
         {
-            child.transform.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(1f, 0f, 0f, 1f)); // red
+            //child.transform.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(1f, 0f, 0f, 1f)); // red
+            child.transform.GetComponent<MeshRenderer>().material = Inactive;  
         }      
         canActivate = true;
         order = 0;
@@ -109,7 +116,8 @@ public class PuzzleFeedbackController : MusicInteractable
     {
         foreach (Transform child in transform)
         {
-            child.transform.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(0f, 1f, 0f, 1f)); // Green
+            //child.transform.GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(0f, 1f, 0f, 1f)); // Green
+            child.transform.GetComponent<MeshRenderer>().material = Complete; 
         }
 
         canActivate = false;
