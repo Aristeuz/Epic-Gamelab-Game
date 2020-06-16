@@ -47,8 +47,8 @@ public class PrimeMusicManager : MonoBehaviour
     private float vibeTimer = 0f;
     private float vibeTimeLimit = 4f;
 
-    FMOD.Studio.EventInstance Backgroundmusic;
-
+    FMOD.Studio.EventInstance ThemeCommons;
+    //FMOD.Studio.EventInstance.getParameterByName();
     //public float Intencity;
 
 
@@ -63,6 +63,7 @@ public class PrimeMusicManager : MonoBehaviour
             Debug.LogError("Second instance of prime music manager was created'(and deleted)!");
             DestroyImmediate(this);
         }
+       
     }
 
     void Start()
@@ -72,6 +73,11 @@ public class PrimeMusicManager : MonoBehaviour
 
         //calculate the extra reaction time after the beat to be a quarter over the total amount
         reactionTime = (convertedBPM / 4);
+
+        ThemeCommons = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Theme Commons");
+        ThemeCommons.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        ThemeCommons.setParameterByName("Intensity", vibeMeter);
+        ThemeCommons.start();
     }
 
     void Update()
@@ -115,11 +121,13 @@ public class PrimeMusicManager : MonoBehaviour
             {
                 vibeMeter -= 1;
                 vibeTimer = 0;
+                ThemeCommons.setParameterByName("Intensity", vibeMeter);
             }
             if (vibeMeter > 13)
             {
                 vibeMeter -= 6;
                 vibeTimer = 0;
+                ThemeCommons.setParameterByName("Intensity", vibeMeter);
             }
         }
 

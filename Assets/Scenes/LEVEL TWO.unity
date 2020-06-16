@@ -874,6 +874,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 288984016}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &160135669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160135661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!1001 &163369528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1604,6 +1617,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 401896208721071155, guid: 3203c4efb234f5442956d80d3174a5e4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 463549635855049390, guid: 3203c4efb234f5442956d80d3174a5e4,
         type: 3}
       propertyPath: a3
@@ -13660,6 +13678,7 @@ GameObject:
   - component: {fileID: 1961206150}
   - component: {fileID: 1961206153}
   - component: {fileID: 1961206154}
+  - component: {fileID: 1961206155}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13852,6 +13871,19 @@ MonoBehaviour:
   DefaultRotInfluence: {x: 1, y: 1, z: 1}
   RestPositionOffset: {x: 0, y: 0, z: 0}
   RestRotationOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &1961206155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961206149}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!1 &1994844563
 GameObject:
   m_ObjectHideFlags: 0
