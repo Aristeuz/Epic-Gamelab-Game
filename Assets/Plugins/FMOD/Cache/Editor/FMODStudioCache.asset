@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/SFX/SFXtest2
   guid: 6f7723032b33b0498e5c31d917e586e4
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -214,6 +214,30 @@ MonoBehaviour:
   - Name: Desktop
     Value: 736
   Exists: 1
+--- !u!114 &-7507813207793238190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Theme Commons
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Theme Commons
+  guid: edd1bc0f8a28ea42ade5309831bd2014
+  Banks:
+  - {fileID: 3503492199840735294}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1039619874491155763}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 223000
 --- !u!114 &-7477903325024086087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +292,7 @@ MonoBehaviour:
   Path: event:/Music/Menu Music
   guid: b0ea33be3b92d24bb8fa442cf5f26dac
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -352,6 +376,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 679
+--- !u!114 &-6715316543527640673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Theme Doubt/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-6687136295844435611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +466,23 @@ MonoBehaviour:
   lastModified: 637196344590860702
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-6231194920213275413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Theme Growth 1/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &-6058961591059808040
 MonoBehaviour:
@@ -517,12 +575,12 @@ MonoBehaviour:
   Path: event:/Music/Theme Immortals
   guid: 5be119d8b39a5940a3142800bece07cf
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3730330909631137105}
+  - {fileID: -5309870926029507754}
   MinDistance: 1
   MaxDistance: 20
   Length: 106000
@@ -564,7 +622,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-5584243543092026930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +719,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-5309870926029507754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Theme Immortals/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5094127163032870442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,7 +825,7 @@ MonoBehaviour:
   Path: event:/Music/MusicTest
   guid: 90e7a97e93e97949a4e0b05ccb5d7db4
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -857,7 +932,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3528190513685545310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,12 +1088,12 @@ MonoBehaviour:
   Path: event:/Music/Theme Growth 2
   guid: 1f1855aa294f9f4f91d92be430d20052
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -5653316937905880705}
+  - {fileID: -462612466553115100}
   MinDistance: 1
   MaxDistance: 20
   Length: 32000
@@ -1387,6 +1462,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-1039619874491155763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Theme Commons/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-863239692488237006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,6 +1573,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10657
+--- !u!114 &-462612466553115100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Theme Growth 2/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-190177576447793470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,7 +1624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 1094686900807115541}
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   EditorEvents:
   - {fileID: 5802885604272718383}
   - {fileID: 1349615318866679255}
@@ -1527,12 +1636,14 @@ MonoBehaviour:
   - {fileID: -5841214521163105949}
   - {fileID: 8078359862917842563}
   - {fileID: 7900872497689633621}
+  - {fileID: 2769207637610823548}
+  - {fileID: -7507813207793238190}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   StringsBanks:
   - {fileID: 1094686900807115541}
-  stringsBankWriteTime: 637278845099871278
+  stringsBankWriteTime: 637278861678632005
   cacheVersion: 3
 --- !u!114 &2964450081770356
 MonoBehaviour:
@@ -1586,7 +1697,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &161877303067294932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1645,7 +1756,7 @@ MonoBehaviour:
   lastModified: 637278845099841368
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &802587088050341527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,11 +1847,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMODfile/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637278845099871278
+  lastModified: 637278861678632005
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1440
+    Value: 1512
   Exists: 1
 --- !u!114 &1264651980551986589
 MonoBehaviour:
@@ -1777,7 +1888,7 @@ MonoBehaviour:
   Path: event:/Voice/VoiceTest
   guid: 53ce2cb31f92924babb2b6a23e58ac63
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1995,6 +2106,30 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &2769207637610823548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Theme Bard
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Theme Bard
+  guid: 09a89b8ff397064082bc81b00e88be49
+  Banks:
+  - {fileID: 3503492199840735294}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 9146514287284501321}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 122010
 --- !u!114 &2915442977318808123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,6 +2264,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3503492199840735294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODfile/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637278861678592112
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3678881758240212854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2567,7 +2720,7 @@ MonoBehaviour:
   Path: event:/Enviroment/EnviromentTest
   guid: 00f2c5a977c0ff4f8398e421ad9a7fa3
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2793,7 +2946,7 @@ MonoBehaviour:
   Path: event:/SFX/SFXtest
   guid: dc8e75352d03fc4cbca84c103d901e78
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2990,12 +3143,12 @@ MonoBehaviour:
   Path: event:/Music/Theme Doubt
   guid: d435a6ccf63a094daaa1b7a3c172e9e8
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 8618041873799369066}
+  - {fileID: -6715316543527640673}
   MinDistance: 1
   MaxDistance: 20
   Length: 112000
@@ -3032,12 +3185,12 @@ MonoBehaviour:
   Path: event:/Music/Theme Growth 1
   guid: d87ed391c6555e4186232d43726f5694
   Banks:
-  - {fileID: 642621085717779416}
+  - {fileID: 3503492199840735294}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 41399165826428938}
+  - {fileID: -6231194920213275413}
   MinDistance: 1
   MaxDistance: 20
   Length: 192000
@@ -3173,7 +3326,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &9058450459409576914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3192,6 +3345,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &9146514287284501321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Theme Bard/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &9176166989156299158
 MonoBehaviour:
   m_ObjectHideFlags: 0
