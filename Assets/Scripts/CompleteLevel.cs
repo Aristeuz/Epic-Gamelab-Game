@@ -10,9 +10,6 @@ public class CompleteLevel : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-        {
             SceneManager.LoadScene(levelName);
-        }
     }
 }

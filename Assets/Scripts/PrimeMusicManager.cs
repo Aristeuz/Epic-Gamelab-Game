@@ -74,7 +74,7 @@ public class PrimeMusicManager : MonoBehaviour
         //calculate the extra reaction time after the beat to be a quarter over the total amount
         reactionTime = (convertedBPM / 4);
 
-        ThemeCommons = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Theme Commons");
+        ThemeCommons = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Theme Commons 2D Audio");
         ThemeCommons.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         ThemeCommons.setParameterByName("Intensity", vibeMeter);
         ThemeCommons.start();
