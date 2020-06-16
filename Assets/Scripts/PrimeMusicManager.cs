@@ -47,6 +47,10 @@ public class PrimeMusicManager : MonoBehaviour
     private float vibeTimer = 0f;
     private float vibeTimeLimit = 4f;
 
+    FMOD.Studio.EventInstance Backgroundmusic;
+
+    //public float Intencity;
+
 
     private void Awake()
     {
