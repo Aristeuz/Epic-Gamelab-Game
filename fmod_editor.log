@@ -9,7 +9,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001D70A803628 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000175898A97E8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -21,10 +21,1688 @@
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 000001758BAB3AB8 : node = 000001758D686B10
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB3AB8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758D686C20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB3AB8
+[LOG] SoundI::getSubSound                      : sound 000001758BAB3AB8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9848 : node = 000001764F988A60
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9848
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001764F988B70
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9848
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9848.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA0B8
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA0B8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9848)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175934D2508)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA0B8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF99F8 : node = 00000175881D6330
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF99F8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175881D6440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF99F8
+[LOG] SoundI::getSubSound                      : sound 000001764FCF99F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA418
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA418
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA418
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA418
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF99F8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (0000017593C288D8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA418)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAC88 : node = 00000175881D6AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175881D6BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 83437
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAC88.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA268
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA268
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA268
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFAC88)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175934D07C8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA268)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFA268 : node = 00000175881D6330
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA268
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175881D6440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 87000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA268
+[LOG] SoundI::getSubSound                      : sound 000001764FCFA268.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFA268)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA5C8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFA0B8 : node = 000001758F789F40
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA0B8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758F78A050
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA0B8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFA0B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9848
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9848
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001758BAB3AB8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (0000017593C28598)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCF9F08)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF99F8 : node = 0000017587CEF330
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF99F8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017587CEF440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF99F8
+[LOG] SoundI::getSubSound                      : sound 000001764FCF99F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCFA0B8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCF9848)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFA5C8 : node = 0000017587CEF470
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017587CEF580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFA5C8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9D58
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9D58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9D58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9D58
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFA5C8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001758C5A7978)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCF9D58)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9F08 : node = 0000017588D50860
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50970
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 84750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9F08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA0B8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA0B8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9F08)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA0B8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAAD8 : node = 000001758F7897C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758F7898D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 83437
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAAD8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAE38
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAE38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAE38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAE38
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFAAD8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAE38)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFA5C8 : node = 0000017588D504A0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D505B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFA5C8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFA5C8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAAD8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9D58 : node = 0000017588D50720
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9D58
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50830
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9D58
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9D58.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCF99F8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175933813F8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCFAFE8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9F08 : node = 0000017588D50860
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14528
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50970
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9F08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9F08)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933813F8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAAD8)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCF9D58)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (0000017593C288D8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCF9BA8)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF94E8 : node = 0000017588D50720
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF94E8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50830
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF94E8
+[LOG] SoundI::getSubSound                      : sound 000001764FCF94E8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAC88 : node = 0000017588D50860
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50970
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAC88.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFAC88)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175934D21C8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAFE8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFA5C8 : node = 0000017556224F80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 83437
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFA5C8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFA5C8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (0000017593C28598)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAFE8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9BA8 : node = 0000017556224F80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9BA8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9BA8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175934D26A8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCF9F08)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAC88 : node = 0000017556225340
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAC88.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA418
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA418
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCF94E8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175934D2508)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCFAAD8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9F08 : node = 0000017556224580
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556224690
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 83437
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9F08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9F08)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA5C8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9BA8 : node = 0000017556224F80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 84750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9BA8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF94E8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9BA8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175934CF928)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCF94E8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAAD8 : node = 0000017588D50720
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50830
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAAD8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCFAC88)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175934CF2A8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCFA418)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9F08 : node = 000001758D686B10
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758D686C20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 87000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9F08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA418
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA418
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA418
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA418
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9F08)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933813F8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA418)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9F08 : node = 0000017588D4FFA0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D500B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 83437
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9F08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9F08)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933813F8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAFE8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9F08 : node = 0000017588D50860
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50970
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9F08.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCFAAD8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCFA5C8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFA418 : node = 000001758F789E00
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA418
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758F789F10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA418
+[LOG] SoundI::getSubSound                      : sound 000001764FCFA418.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFA418)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAAD8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAAD8 : node = 000001758D686B10
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758D686C20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 84750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAAD8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFAAD8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175934D0628)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAC88)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAAD8 : node = 0000017588D50AE0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50BF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 92726
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAAD8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFAAD8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175934D0E48)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFAC88)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAC88 : node = 00000175562250C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAC88
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175562251D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 83437
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAC88
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAC88.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9698
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9698
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9698
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9698
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCFAC88)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCF9698)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFB198 : node = 00000175562250C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFB198
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175562251D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFB198
+[LOG] SoundI::getSubSound                      : sound 000001764FCFB198.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF94E8
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCF9F08)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175934D2D28)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCF9BA8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9698 : node = 0000017556225340
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9698
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9698
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9698.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9F08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9F08
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9698)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001758C84B158)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCF9F08)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9BA8 : node = 0000017556225340
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 83437
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9BA8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA5C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA5C8
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9BA8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001758C5A7FF8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA5C8)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCFB198)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175933810B8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCF94E8)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFAFE8 : node = 000001758BF57CE0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAFE8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758BF57DF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAFE8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFAFE8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA418
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA418
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCF9BA8 : node = 00000176500E9690
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176500E97A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80750
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::getSubSound                      : sound 000001764FCF9BA8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA928
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA928
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA928
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA928
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764FCF9BA8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001758CE08BA8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764FCFA928)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764FCFB198 : node = 000001758BF57A60
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFB198
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001764FCFA928 : node = 000001758BF57E20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758BF57B70
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001764FCF9BA8 : node = 00000175562241C0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 2 - Synthpad', format=2, channels=2, frequency=48000, lengthbytes=2193856, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.159210.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFB198
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFA928
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758BF57F30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 32000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 4 - Strings', format=2, channels=2, frequency=48000, lengthbytes=2492032, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.170441.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFA928
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175562242D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 48000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 1 - Bells', format=2, channels=2, frequency=48000, lengthbytes=1949728, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.213562.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9BA8
+[LOG] SoundI::getSubSound                      : sound 000001764FCFB198.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000001764FCFA928.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9D58
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      :     sound 000001764FCF9BA8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9D58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF9D58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF9D58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCF94E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764FCFAAD8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764FCFAAD8
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001758BAB4EF8 : node = 0000017556224F80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB4EF8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 64776
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB4EF8
+[LOG] SoundI::getSubSound                      : sound 000001758BAB4EF8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB5408
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB5408
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB5408
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB5408
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001758BAB55B8 : node = 0000017588D50AE0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB55B8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000001758BAB5768 : node = 0000017588D4FFA0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50BF0
+[LOG] SystemI::createSound                     :     setdata soundi = 000001758BAB3AB8 : node = 0000017588D50720
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 88000
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001758BAB3C68 : node = 0000017588D50860
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 2
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001759310A7D8 : node = 000001758C90B1A0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 2 - Synthpad', format=2, channels=2, frequency=48000, lengthbytes=2193856, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.159210.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB55B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB5768
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D500B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 64776
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB5768
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB3AB8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50830
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 40000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 4 - Strings', format=2, channels=2, frequency=48000, lengthbytes=2492032, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.170441.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB3AB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001758BAB3C68
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50970
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 16000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001758BAB3C68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001759310A7D8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001758C90B2B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 56000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 1 - Bells', format=2, channels=2, frequency=48000, lengthbytes=1949728, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.213562.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001759310A7D8
+[LOG] SoundI::getSubSound                      : sound 000001758BAB55B8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001759310A118
+[LOG] SoundI::getSubSound                      : sound 000001758BAB5768.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      :     sound 000001758BAB3AB8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      :     sound 000001758BAB3C68.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      :     sound 000001759310A7D8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001759310A118
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001757F115728
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001757F115728
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001757F1173D8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001757F1173D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001759310A118
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001759310A118
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001757F115728
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001757F115728
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001757F1173D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001757F1173D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEB68
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001758BAB4EF8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (0000017593C280B8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001758BAB5408)
+[LOG] SoundI::release                          : Growth2 Layer 1 - Bells (000001764FCF9BA8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (000001758CE08BA8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (000001764FCFAAD8)
+[LOG] SoundI::release                          : Growth2 Layer 4 - Strings (000001764FCFA928)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (000001758CE08528)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (000001764FCF94E8)
+[LOG] SoundI::release                          : Growth2 Layer 2 - Synthpad (000001764FCFB198)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (000001758CE08868)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (000001764FCF9D58)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764FCFAFE8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001758CE08D48)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764FCFA418)
+[LOG] SoundI::release                          : Growth2 Layer 4 - Strings (000001758BAB3AB8)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (0000017593C28A78)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (000001757F1173D8)
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001758BAB5768)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (0000017593C288D8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001757F115728)
+[LOG] SoundI::release                          : Growth2 Layer 2 - Synthpad (000001758BAB55B8)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (0000017593C28598)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (000001759310A118)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EED18 : node = 0000017588D4FFA0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EEEC8 : node = 0000017588D50720
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EED18
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D500B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 24000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EED18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEEC8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50830
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 64000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 1 - Bells', format=2, channels=2, frequency=48000, lengthbytes=1949728, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.213562.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEEC8
+[LOG] SoundI::getSubSound                      : sound 000001764F6EED18.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000001764F6EEEC8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDDE8
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDDE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDC38
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDC38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDDE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDDE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDC38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDC38
+[LOG] SoundI::release                          : Growth2 Layer 1 - Bells (000001759310A7D8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (0000017593C27F18)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (000001764F6EEB68)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001758BAB3C68)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (0000017593C28C18)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764F6EE4A8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EE148 : node = 0000017556224580
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE148
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSound                     :     setdata soundi = 000001764F6EE2F8 : node = 00000175562241C0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556224690
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 24000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE148
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE2F8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175562242D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 64000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 1 - Bells', format=2, channels=2, frequency=48000, lengthbytes=1949728, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.213562.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE2F8
+[LOG] SoundI::getSubSound                      : sound 000001764F6EE148.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      : sound 000001764F6EE2F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED218
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] SoundI::release                          : Growth2 Layer 1 - Bells (000001764F6EEEC8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (0000017593C288D8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (000001764F6EDC38)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764F6EED18)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (0000017593C280B8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764F6EDDE8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED218
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6ED8D8 : node = 0000017588D50AE0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED8D8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50BF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED8D8
+[LOG] SoundI::getSubSound                      : sound 000001764F6ED8D8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE658
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE658
+[LOG] SoundI::release                          : Growth2 Layer 1 - Bells (000001764F6EE2F8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (00000175934D2B88)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (000001764F6EE4A8)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764F6EE148)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175934D2508)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764F6ED218)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EDA88 : node = 0000017588D4FFA0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDA88
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D500B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDA88
+[LOG] SoundI::getSubSound                      : sound 000001764F6EDA88.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED3C8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED3C8
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764F6ED8D8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175934D26A8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764F6EE658)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6ED728 : node = 0000017588D50720
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED728
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017588D50830
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED728
+[LOG] SoundI::getSubSound                      : sound 000001764F6ED728.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEB68
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764F6ED728)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001758CE08528)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764F6EEB68)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED3C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED3C8
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6ED218 : node = 0000017556225340
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED218
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000001764F6EE4A8 : node = 00000175562250C0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001764F6EE2F8 : node = 0000017556224F80
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 2 - Synthpad', format=2, channels=2, frequency=48000, lengthbytes=2193856, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.159210.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000175562251D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 32000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 4 - Strings', format=2, channels=2, frequency=48000, lengthbytes=2492032, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.170441.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE2F8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017556225090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 48000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 1 - Bells', format=2, channels=2, frequency=48000, lengthbytes=1949728, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.213562.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE2F8
+[LOG] SoundI::getSubSound                      : sound 000001764F6ED218.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED8D8
+[LOG] SoundI::getSubSound                      : sound 000001764F6EE4A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      :     sound 000001764F6EE2F8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED8D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE808
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDF98
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDF98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED8D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED8D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDF98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDF98
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EEEC8 : node = 00000176500E8DD0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEEC8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176500E8EE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 64776
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEEC8
+[LOG] SoundI::getSubSound                      : sound 000001764F6EEEC8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE9B8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE9B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE9B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE9B8
+[LOG] SoundI::release                          : Growth2 Layer 4 - Strings (000001764F6EE4A8)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (00000175934D19A8)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (000001764F6EE808)
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764F6EEEC8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (0000017593C288D8)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764F6EE9B8)
+[LOG] SoundI::release                          : Growth2 Layer 2 - Synthpad (000001764F6ED218)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (00000175934CF5E8)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (000001764F6ED8D8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EDDE8 : node = 00000176500E9910
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDDE8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176500E9A20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 5 - Bass', format=2, channels=2, frequency=48000, lengthbytes=1746304, lengthpcm=9218999, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354614.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDDE8
+[LOG] SoundI::getSubSound                      : sound 000001764F6EDDE8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE9B8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE9B8
+[LOG] SoundI::release                          : Growth2 Layer 1 - Bells (000001764F6EE2F8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (00000175934CF788)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (000001764F6EDF98)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764F6EDA88)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175934D21C8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764F6ED3C8)
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EDF98 : node = 00000176500E9A50
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EDF98
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000001764F6EE148 : node = 00000176500E8DD0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSound                     :     filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176500E9B60
+[LOG] SystemI::createSound                     :     setdata soundi = 000001764F6EE2F8 : node = 00000176500E8F10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000017593C283A8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 80000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 2 - Synthpad', format=2, channels=2, frequency=48000, lengthbytes=2193856, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.159210.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EDF98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE148
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176500E8EE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 32000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 4 - Strings', format=2, channels=2, frequency=48000, lengthbytes=2492032, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.170441.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE148
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE2F8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176500E9020
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 48000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 1 - Bells', format=2, channels=2, frequency=48000, lengthbytes=1949728, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.213562.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE2F8
+[LOG] SoundI::getSubSound                      : sound 000001764F6EDF98.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE808
+[LOG] SoundI::getSubSound                      : sound 000001764F6EE148.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] SoundI::getSubSound                      :     sound 000001764F6EE2F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      :     starting non blocking seek and setting sound to not ready state
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] SoundI::getSubSound                      :     finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE808
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EE4A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EEB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EEB68
+[LOG] SystemI::createSound                     : filename = FMODfile/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001764F6EED18 : node = 00000176500E97D0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000017593C283A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6EED18
+[LOG] SystemI::createSoundInternal             :     Create name='FMODfile/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 15983904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 15072
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000176500E98E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 64776
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Growth2 Layer 3 - Drums', format=2, channels=2, frequency=48000, lengthbytes=2631840, lengthpcm=9466000, pcmblocksize=0, loopstart=0, loopend=9215998, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.745514.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6EED18
+[LOG] SoundI::getSubSound                      : sound 000001764F6EED18.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED728
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED728
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001764F6ED728
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001764F6ED728
+[LOG] SoundI::release                          : Growth2 Layer 3 - Drums (000001764F6EED18)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001758CE08D48)
+[LOG] SoundI::release                          :     Growth2 Layer 3 - Drums (000001764F6ED728)
+[LOG] SoundI::release                          : Growth2 Layer 4 - Strings (000001764F6EE148)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (00000175934D1B48)
+[LOG] SoundI::release                          :     Growth2 Layer 4 - Strings (000001764F6EE4A8)
+[LOG] SoundI::release                          : Growth2 Layer 2 - Synthpad (000001764F6EDF98)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (00000175934D29E8)
+[LOG] SoundI::release                          :     Growth2 Layer 2 - Synthpad (000001764F6EE808)
+[LOG] SoundI::release                          : Growth2 Layer 1 - Bells (000001764F6EE2F8)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (00000175934CF788)
+[LOG] SoundI::release                          :     Growth2 Layer 1 - Bells (000001764F6EEB68)
+[LOG] SoundI::release                          : Growth2 Layer 5 - Bass (000001764F6EDDE8)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (00000175934CF928)
+[LOG] SoundI::release                          :     Growth2 Layer 5 - Bass (000001764F6EE9B8)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
